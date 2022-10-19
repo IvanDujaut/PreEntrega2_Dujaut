@@ -45,21 +45,20 @@
           <i class="fas fa-bars"></i>
         </button>
       </nav>
-    </header> 
+    </header>
 
-
-    <section id="bannerPpal">
-      <h1>Music is everything</h1>
-      <p class="description">
-        Sample is a diverse community, made up of developers, communicators,
-        lawyers, researchers, and more. Together, we build the infrastructure,
-        features, and experiences you love, and help shape the future of music.
-      </p>
-      <figure class="imgPpal">
-        <img src="./images/ImgHome.svg" alt="" />
-      </figure>
-    </section>
     <main class="container">
+      <section id="bannerPpal">
+        <h1>Music is everything</h1>
+        <p class="description">
+          Sample is a diverse community, made up of developers, communicators,
+          lawyers, researchers, and more. Together, we build the infrastructure,
+          features, and experiences you love, and help shape the future of music.
+        </p>
+        <figure class="imgPpal">
+          <img src="./images/ImgHome.svg" alt="" />
+        </figure>
+      </section>
       <section id="goldenCircle">
         <article class="goldenCircleSection">
           <h2 class="goldenCircleSection__title">Why</h2>
@@ -420,8 +419,6 @@
       
     </main>
     <script src="./js/bootstrap.bundle.js"></script>
-  </body>
-  <footer>
     <div class="newsletter">
       <article>
         <h4>Subscribe to our newsletter</h4>
@@ -430,6 +427,25 @@
         </p>
       </article>
       <div class="newsletter__actions">
+        <input
+          type="email"
+          name="emailInput"
+          placeholder="your email"
+          required
+        />
+        <button class="btn">Subscribe</button>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="newsletterFooter">
+      <article>
+        <h4>Subscribe to our newsletter</h4>
+        <p>
+          Recieve upto info about latest trends and and news updates via email.
+        </p>
+      </article>
+      <div class="newsletterFooter__actions">
         <input
           type="email"
           name="emailInput"
