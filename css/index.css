@@ -976,6 +976,8 @@ footer .copy-right {
     }
 }
 
+/*EFECTOS*/
+
 @keyframes scale-up {
     0% {
         transform:scale(1)
