@@ -78,10 +78,8 @@ a {
 header {
     padding: var(--sp-sm) var(--sp-xxxl);
     background-color: var(--header);
-    z-index: 999;
     width: 100%;
     box-shadow: 0 0 7px rgb(0, 0, 0);
-    position: sticky;
     top: 0;
 }
 
