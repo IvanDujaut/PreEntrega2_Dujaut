@@ -5,507 +5,562 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing - Project</title>
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <script src="https://kit.fontawesome.com/479550147b.js" 
     crossorigin="anonymous">
     </script>
     <script defer src="./js/index.js"></script>
   </head>
-
   <body id="home">
+    <!-- 
+    ==================
+    ======NAVBAR======
+    ==================-->
     <header>
-      <nav class="navbar">
-        <a class="navbar__link" href="#home">
-          <img src="./images/Icon.svg" alt="" />
-        </a>
-        <ul class="navigation navigation_visible">
-          <div class="pages">
-            <li class="navigation__item">
-              <a class="navigation__link" href="aboutUs.html">About Us!</a>
-            </li>
-          </div>
-          <div class="pages">
-            <li class="navigation__item">
-              <a class="navigation__link" href="blog.html">Blog</a>
-            </li>
-          </div>
-          <div class="pages">
-            <li class="navigation__item">
-              <a class="navigation__link" href="joinUs.html">Join Us!</a>
-            </li>
-          </div>
-          <div class="pages">
-            <li class="navigation__item">
-              <a class="navigation__link" href="contactUs.html">Contact Us!</a>
-            </li>
-          </div>
-        </ul>
-        <button class="navbar-toggle">
-          <i class="fas fa-bars"></i>
-        </button>
-      </nav>
+        <nav class="navbar">
+            <a class="navbar__link" href="#home">
+              <img src="./images/Icon.svg" alt="" />
+            </a>
+            <ul class="navigation navigation_visible">
+              <div class="pages">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="aboutUs.html">About Us!</a>
+                </li>
+              </div>
+              <div class="pages">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="blog.html">Blog</a>
+                </li>
+              </div>
+              <div class="pages">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="joinUs.html">Join Us!</a>
+                </li>
+              </div>
+              <div class="pages">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="contactUs.html">Contact Us!</a>
+                </li>
+              </div>
+            </ul>
+            <button class="navbar-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+        </nav>
     </header>
-
-    <main class="container">
-      <section id="bannerPpal">
+    <!-- 
+    ====================
+    ======BanerHome=====
+    ====================-->
+    <section class="container-fluid container-lg" id="bannerPpal">
         <h1>Music is everything</h1>
-        <p class="description">
-          Sample is a diverse community, made up of developers, communicators,
-          lawyers, researchers, and more. Together, we build the infrastructure,
-          features, and experiences you love, and help shape the future of music.
+        <p class="mx-auto description">
+            Sample is a diverse community, made up of developers, communicators,
+            lawyers, researchers, and more. Together, we build the infrastructure,
+            features, and experiences you love, and help shape the future of music.
         </p>
-        <figure class="imgPpal">
-          <img src="./images/ImgHome.svg" alt="" />
+        <figure class="mx-auto imgPpal">
+            <img class="imgbanner" src="./images/ImgHome.svg" alt="" />
         </figure>
-      </section>
-      <section id="goldenCircle">
-        <article class="goldenCircleSection">
-          <h2 class="goldenCircleSection__title">Why</h2>
-          <span class="goldenCircleSection__paragraph">
-            Because we believe in the value of ideas and information. 
-            Music is a great engine of innovation propelled by the imagination of its authors. 
-            We want to return control to the creative chain of the production of a work, 
-            optimizing and making the publication process transparent.
-          </span>
-        </article>
-        <article class="goldenCircleSection">
-          <h2 class="goldenCircleSection__title">How</h2>
-          <span class="goldenCircleSection__paragraph">
-            Automating the distribution of music and its royalties, 
-            so as not to depend on intermediaries and guarantee access to information. 
-            Allowing the artist to only worry about what really matters: his work.
-          </span>
-        </article>
-        <article class="goldenCircleSection">
-          <h2 class="goldenCircleSection__title">What</h2>
-          <span class="goldenCircleSection__paragraph">
-            A platform where the author can view income, 
-            compensation to third parties and royalty collection rights in real time. 
-            In addition, he can make the payment for his works automatically and directly.
-          </span>
-        </article>
-      </section>
-
-      <section id="potentialUsers">
+    </section>
+    <!-- 
+    ====================
+    ====GoldenCircle====
+    ====================-->
+    <section class="container" id="goldenCircle">
+        <div class="row w-100 mx-auto">
+            <article class="col-sm-12 col-lg-4
+                            d-flex 
+                            justify-content-start
+                            flex-column
+                            flex-sm-row
+                            flex-lg-column 
+                            mt-5" 
+                    id="goldenCircleSection">
+                <h2 class="fs-2 mt-4 pe-5 pb-1" 
+                    id="goldenCircleSection__title">
+                    Why
+                </h2>
+                <p  class="" 
+                    id="goldenCircleSection__paragraph">
+                    Because we believe in the value of ideas and information. Music is a
+                    great engine of innovation propelled by the imagination of its
+                    authors. We want to return control to the creative chain of the
+                    production of a work, optimizing and making the publication process
+                    transparent.
+                </p>
+            </article>
+            <article class="col-sm-12 col-lg-4
+                            d-flex 
+                            justify-content-start
+                            flex-column
+                            flex-sm-row
+                            flex-lg-column
+                            mt-5" 
+                        id="goldenCircleSection">
+                <h2 class="mt-4 pe-5 pb-1" 
+                    id="goldenCircleSection__title">
+                    How
+                </h2>
+                <p  class=""
+                    id="goldenCircleSection__paragraph">
+                    Automating the distribution of music and its royalties, so as not to
+                    depend on intermediaries and guarantee access to information.
+                    Allowing the artist to only worry about what really matters: his
+                    work.
+                </p>
+            </article>
+            <article class="col-sm-12 col-lg-4
+                            d-flex 
+                            justify-content-start
+                            flex-column
+                            flex-sm-row
+                            flex-lg-column
+                            mt-5" 
+                    id="goldenCircleSection">
+                <h2 class="fs-2 mt-4 pe-5 pb-1" 
+                    id="goldenCircleSection__title">
+                    What
+                </h2>
+                <p  class=""
+                    id="goldenCircleSection__paragraph">
+                    A platform where the author can view income, compensation to third
+                    parties and royalty collection rights in real time. In addition, he
+                    can make the payment for his works automatically and directly.
+                </p>
+            </article>
+        </div>
+    </section>
+    <!-- 
+    ====================
+    =====CardsUsers=====
+    ====================-->
+    <section class="container" id="potentialUsers">
         <h2>
           See what some <br />
           musicians say about Sample
         </h2>
         <div class="cards">
-          <div class="profile-card">
-            <article class="profile-card__desc">
-              <h3>
-                <!--class="profile-card__name profile-card__name--davidGilmore"-->
-                David Gilmore
-              </h3>
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis delectus a, hic commodi harum quisquam ipsam
-                nesciunt facere ad"
-              </p>
-              <div class="profile-card__info">
-                <figure>
-                  <img src="./images/davidgilmore.jpeg" alt="..." />
-                </figure>
-                <div class="profile-card__social">
-                  <a href="#" class="facebook">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-brand-facebook"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <path
-                        d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a href="#" class="twitter">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-brand-twitter"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <path
-                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a href="#" class="instagram">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-brand-instagram"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <rect x="4" y="4" width="16" height="16" rx="4"></rect>
-                      <circle cx="12" cy="12" r="3"></circle>
-                      <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
+            <div class="profile-card">
+                <article class="profile-card__desc">
+                    <h3>
+                        <!--class="profile-card__name profile-card__name--davidGilmore"-->
+                        David Gilmore
+                    </h3>
+                    <p>
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Perferendis delectus a, hic commodi harum quisquam ipsam
+                        nesciunt facere ad"
+                    </p>
+                        <div class="profile-card__info">
+                            <figure class="m-0">
+                            <img src="./images/davidgilmore.jpeg" alt="..." />
+                            </figure>
+                            <div class="align-self-center profile-card__social">
+                            <a href="#" class="facebook">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-brand-facebook"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                                ></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="twitter">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-brand-twitter"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+                                ></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="instagram">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-brand-instagram"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                stroke-width="2"
+                                stroke="currentColor"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                                </svg>
+                            </a>
+                            </div>
+                        </div>              
+                </article>
+            </div>
 
-          <div class="profile-card">
-            <article class="profile-card__desc">
-              <h3>
-                <!--class="profile-card__name profile-card__name--davidGilmore"-->
-                Paul McCartney
-              </h3>
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis delectus a, hic commodi harum quisquam ipsam
-                nesciunt facere ad"
-              </p>
-              <div class="profile-card__info">
-                <figure>
-                  <img
-                    src="https://tse3.mm.bing.net/th?id=OIP.KvP0SfAno9IHGY8Fuwx_BQHaE8"
-                    alt="..."
-                  />
-                </figure>
-                <div class="profile-card__social">
-                  <a href="#" class="facebook">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-brand-facebook"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <path
-                        d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a href="#" class="twitter">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-brand-twitter"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <path
-                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a href="#" class="instagram">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-brand-instagram"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <rect x="4" y="4" width="16" height="16" rx="4"></rect>
-                      <circle cx="12" cy="12" r="3"></circle>
-                      <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
-                    </svg>
-                  </a>
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
+            <div class="profile-card">
+                <article class="profile-card__desc">
+                    <h3>
+                        <!--class="profile-card__name profile-card__name--davidGilmore"-->
+                        Paul McCartney
+                    </h3>
+                    <p>
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Perferendis delectus a, hic commodi harum quisquam ipsam
+                        nesciunt facere ad"
+                    </p>
+                    <div class="profile-card__info">
+                        <figure class="m-0">
+                        <img
+                            src="https://tse3.mm.bing.net/th?id=OIP.KvP0SfAno9IHGY8Fuwx_BQHaE8"
+                            alt="..."
+                        />
+                        </figure>
+                        <div class="align-self-center profile-card__social">
+                        <a href="#" class="facebook">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-facebook"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                            ></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="twitter">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-twitter"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+                            ></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="instagram">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                            </svg>
+                        </a>
+                        </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
 
-          <div class="profile-card">
-            <article class="profile-card__desc">
-              <h3>
-                <!--class="profile-card__name profile-card__name--davidGilmore"-->
-                Freddie Mercury
-              </h3>
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis delectus a, hic commodi harum quisquam ipsam
-                nesciunt facere ad"
-              </p>
-              <div class="profile-card__info">
-                <figure>
-                  <img
-                    src="https://tse4.mm.bing.net/th?id=OIP.1Otkjr6IG7mhRsClolZsBAHaHd"
-                    alt="..."
-                  />
-                </figure>
-                <div class="profile-card__social">
-                  <a href="#" class="facebook">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-brand-facebook"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <path
-                        d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a href="#" class="twitter">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-brand-twitter"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <path
-                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a href="#" class="instagram">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-brand-instagram"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <rect x="4" y="4" width="16" height="16" rx="4"></rect>
-                      <circle cx="12" cy="12" r="3"></circle>
-                      <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
+            <div class="profile-card">
+                <article class="profile-card__desc">
+                    <h3>
+                        <!--class="profile-card__name profile-card__name--davidGilmore"-->
+                        Freddie Mercury
+                    </h3>
+                    <p>
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Perferendis delectus a, hic commodi harum quisquam ipsam
+                        nesciunt facere ad"
+                    </p>
+                    <div class="profile-card__info">
+                        <figure class="m-0">
+                        <img
+                            src="https://tse4.mm.bing.net/th?id=OIP.1Otkjr6IG7mhRsClolZsBAHaHd"
+                            alt="..."
+                        />
+                        </figure>
+                        <div class="align-self-center profile-card__social">
+                        <a href="#" class="facebook">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-facebook"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                            ></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="twitter">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-twitter"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+                            ></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="instagram">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
 
-          <div class="profile-card">
-            <article class="profile-card__desc">
-              <h3>
-                <!--class="profile-card__name profile-card__name--davidGilmore"-->
-                Axl Rose
-              </h3>
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perferendis delectus a, hic commodi harum quisquam ipsam
-                nesciunt facere ad"
-              </p>
-              <div class="profile-card__info">
-                <figure>
-                  <img
-                    src="https://tse3.mm.bing.net/th?id=OIP.UjN4JNW-0fzw29Jb0dGcaAHaK1"
-                    alt="..."
-                  />
-                </figure>
-                <div class="profile-card__social">
-                  <a href="#" class="facebook">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-brand-facebook"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <path
-                        d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a href="#" class="twitter">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-brand-twitter"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <path
-                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
-                      ></path>
-                    </svg>
-                  </a>
-                  <a href="#" class="instagram">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-brand-instagram"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      stroke-width="2"
-                      stroke="currentColor"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <rect x="4" y="4" width="16" height="16" rx="4"></rect>
-                      <circle cx="12" cy="12" r="3"></circle>
-                      <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </article>
-          </div>
+            <div class="profile-card">
+                <article class="profile-card__desc">
+                    <h3>
+                        <!--class="profile-card__name profile-card__name--davidGilmore"-->
+                        Axl Rose
+                    </h3>
+                    <p>
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Perferendis delectus a, hic commodi harum quisquam ipsam
+                        nesciunt facere ad"
+                    </p>
+                    <div class="profile-card__info">
+                        <figure class="m-0">
+                        <img
+                            src="https://tse3.mm.bing.net/th?id=OIP.UjN4JNW-0fzw29Jb0dGcaAHaK1"
+                            alt="..."
+                        />
+                        </figure>
+                        <div class="align-self-center profile-card__social">
+                        <a href="#" class="facebook">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-facebook"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                            ></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="twitter">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-twitter"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+                            ></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="instagram">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
-      </section>
-      
-    </main>
-    <script src="./js/bootstrap.bundle.js"></script>
-    <div class="newsletter">
-      <article>
-        <h4>Subscribe to our newsletter</h4>
-        <p>
-          Recieve upto info about latest trends and and news updates via email.
-        </p>
-      </article>
-      <div class="newsletter__actions">
-        <input
-          type="email"
-          name="emailInput"
-          placeholder="your email"
-          required
-        />
-        <button class="btn">Subscribe</button>
-      </div>
-    </div>
-  </body>
-  <footer>
-    <div class="newsletterFooter">
-      <article>
-        <h4>Subscribe to our newsletter</h4>
-        <p>
-          Recieve upto info about latest trends and and news updates via email.
-        </p>
-      </article>
-      <div class="newsletterFooter__actions">
-        <input
-          type="email"
-          name="emailInput"
-          placeholder="your email"
-          required
-        />
-        <button class="btn">Subscribe</button>
-      </div>
-    </div>
-
-    <section class="information">
-      <div class="information__more">
-        <section class="learn">
-          <h3>Learn</h3>
-          <ul class="option">
-            <li class="option__item">Introduction</li>
-            <li class="option__item">Features</li>
-            <li class="option__item">Staking</li>
-            <li class="option__item">Get HEDRON</li>
-            <li class="option__item">FAQ</li>
-          </ul>
-        </section>
-        <section class="participate">
-          <h3>Participate</h3>
-          <ul class="option">
-            <li class="option__item">Community</li>
-            <li class="option__item">Contributors</li>
-            <li class="option__item">Events</li>
-            <li class="option__item">Newsletters</li>
-          </ul>
-        </section>
-        <section class="followUs">
-          <h3>Follow us</h3>
-          <ul class="option">
-            <li class="option__socialNetwork">
-              <figure>
-                <img src="./images/Facebook.svg" alt="" />
-              </figure>
-            </li>
-            <li class="option__socialNetwork">
-              <figure>
-                <img src="./images/Instagram.svg" alt="" />
-              </figure>
-            </li>
-            <li class="option__socialNetwork">
-              <figure>
-                <img src="./images/LinkedIN.svg" alt="" />
-              </figure>
-            </li>
-            <li class="option__socialNetwork">
-              <figure>
-                <img src="./images/Twitter.svg" alt="" />
-              </figure>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <section class="copy-right">
-        <p>©2022 Sample AB</p>
-      </section>
     </section>
-  </footer>
+    <!-- 
+    ====================
+    =======Footer=======
+    ====================-->
+    <footer>
+        <section class="grid justify-content-center newsletter">
+            <div class="newsletter__data">
+                <article>
+                    <h4>Subscribe to our newsletter</h4>
+                    <p>
+                    Recieve upto info about latest trends and and news updates via email.
+                    </p>
+                </article>
+                <div class="newsletter__actions">
+                    <input
+                    type="email"
+                    name="emailInput"
+                    placeholder="your email"
+                    required
+                    />
+                    <button class="btn">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <section class="grid justify-content-start newsletterFooter">
+            <div class="newsletterFooter__data">
+                <article>
+                    <h4>Subscribe to our newsletter</h4>
+                    <p>
+                    Recieve upto info about latest trends and and news updates via email.
+                    </p>
+                </article>
+                <div class="newsletterFooter__actions">
+                    <input
+                    type="email"
+                    name="emailInput"
+                    placeholder="your email"
+                    required
+                    />
+                    <button class="btn">Subscribe</button>
+                </div>
+            </div>  
+        </section>
+    
+        <section class="information">
+            <div class="information__more">
+                <section class="learn">
+                <h3>Learn</h3>
+                <ul class="option">
+                    <li class="option__item">Introduction</li>
+                    <li class="option__item">Features</li>
+                    <li class="option__item">Staking</li>
+                    <li class="option__item">Get HEDRON</li>
+                    <li class="option__item">FAQ</li>
+                </ul>
+                </section>
+                <section class="participate">
+                <h3>Participate</h3>
+                <ul class="option">
+                    <li class="option__item">Community</li>
+                    <li class="option__item">Contributors</li>
+                    <li class="option__item">Events</li>
+                    <li class="option__item">Newsletters</li>
+                </ul>
+                </section>
+                <section class="followUs">
+                <h3>Follow us</h3>
+                <ul class="option">
+                    <li class="option__socialNetwork">
+                    <figure>
+                        <img src="./images/Facebook.svg" alt="" />
+                    </figure>
+                    </li>
+                    <li class="option__socialNetwork">
+                    <figure>
+                        <img src="./images/Instagram.svg" alt="" />
+                    </figure>
+                    </li>
+                    <li class="option__socialNetwork">
+                    <figure>
+                        <img src="./images/LinkedIN.svg" alt="" />
+                    </figure>
+                    </li>
+                    <li class="option__socialNetwork">
+                    <figure>
+                        <img src="./images/Twitter.svg" alt="" />
+                    </figure>
+                    </li>
+                </ul>
+                </section>
+            </div>
+            <section class="copy-right">
+                <p>©2022 Sample AB</p>
+            </section>
+        </section>
+    </footer>
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
 </html>
