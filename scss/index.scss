@@ -1,0 +1,20 @@
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@500;600;700;800&display=swap");
+
+/* MISC */
+
+@import './misc/variables';
+@import './misc/normalize';
+
+/* PARTIALS */
+
+@import './partials/header';
+@import './partials/footer';
+
+/* PAGES */
+
+@import './pages/index';
+@import './pages/joinUs';
+@import './pages/aboutUs';
+@import './pages/blog';
+@import './pages/contactUs';
