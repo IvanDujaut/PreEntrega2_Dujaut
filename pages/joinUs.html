@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing - Project</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/translated.css" />
+    <script src="https://kit.fontawesome.com/479550147b.js" 
+    crossorigin="anonymous">
+    </script>
+    <script defer src="../js/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="navbar__link" href="../index.html">
+          <img src="../images/Icon.svg" alt="" />
+        </a>
+        <ul class="navigation navigation_visible">
+          <div class="pages">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./aboutUs.html">About Us!</a>
+            </li>
+          </div>
+          <div class="pages">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./blog.html">Blog</a>
+            </li>
+          </div>
+          <div class="pages">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./joinUs.html">Join Us!</a>
+            </li>
+          </div>
+          <div class="pages">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./contactUs.html">Contact Us!</a>
+            </li>
+          </div>
+        </ul>
+        <button class="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- 
+    ======================
+    Carousel Baner Join Us
+    ======================-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="../images/BannerAboutUs1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="../images/BannerAboutUs2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="../images/BannerAboutUs3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--<section id="BannerJoinUs">
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+      <p>
+        Sapiente, veritatis soluta placeat eos voluptate minima laudantium ullam
+        at expedita.
+      </p>
+      <img src="./images/BannerJoinUs.jpg" alt="" />
+    </section>-->
+
+    <!-- 
+    ===================
+    ========Jobs=======
+    ===================-->
+    <section class="pt-5 container" id="Jobs">
+      <h2>
+        Jobs
+      </h2>
+      <p class="w-75 description-text">
+        Browse our jobs site to see the latest openings, and learn about our mission, 
+        our beliefs, our culture, our values, and everything else in between.
+      </p>
+      <div class="blog-card">
+        <div class="meta">
+          <figure class="photo">
+            <img src="../images/learningToCode.jpg" alt="" />
+          </figure>
+          <ul class="details">
+            <li class="author"><a href="#">John Doe</a></li>
+            <li class="date">Dec. 14, 2022</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <article class="description">
+          <h3>Learning to Code</h3>
+          <h4>Opening a door to the future</h4>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Ad eum dolorum architecto obcaecati enim dicta praesentium, 
+            quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.
+          </p>
+          <p class="read-more">
+            <a href="#">Read More</a>
+          </p>
+        </article>
+      </div>
+
+      <div class="blog-card alt">
+        <div class="meta">
+          <figure class="photo">
+            <img src="../images/masteringToLanguage.jpg" alt="" />
+          </figure>
+          <ul class="details">
+            <li class="author"><a href="#">Jane Doe</a></li>
+            <li class="date">July. 15, 2015</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <article class="description">
+          <h3>Mastering the Language</h3>
+          <h4>Java is not the same as JavaScript</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Ad eum dolorum architecto obcaecati enim dicta praesentium, 
+            quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.
+          </p>
+          <p class="read-more">
+            <a href="#">Read More</a>
+          </p>
+        </article>
+      </div> 
+
+      <div class="blog-card">
+        <div class="meta">
+          <figure class="photo">
+            <img src="../images/learningToCode.jpg" alt="" />
+          </figure>
+          <ul class="details">
+            <li class="author"><a href="#">John Doe</a></li>
+            <li class="date">Dec. 14, 2022</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <article class="description">
+          <h3>Learning to Code</h3>
+          <h4>Opening a door to the future</h4>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Ad eum dolorum architecto obcaecati enim dicta praesentium, 
+            quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.
+          </p>
+          <p class="read-more">
+            <a href="#">Read More</a>
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- 
+    ====================
+    =======Footer=======
+    ====================-->
+    <footer>
+      <section class="grid justify-content-center newsletter">
+          <div class="newsletter__data">
+              <article>
+                  <h4>Subscribe to our newsletter</h4>
+                  <p>
+                  Recieve upto info about latest trends and and news updates via email.
+                  </p>
+              </article>
+              <div class="newsletter__actions">
+                  <input
+                  type="email"
+                  name="emailInput"
+                  placeholder="your email"
+                  required
+                  />
+                  <button class="btn">Subscribe</button>
+              </div>
+          </div>
+      </section>
+      <section class="grid justify-content-start newsletterFooter">
+          <div class="newsletterFooter__data">
+              <article>
+                  <h4>Subscribe to our newsletter</h4>
+                  <p>
+                  Recieve upto info about latest trends and and news updates via email.
+                  </p>
+              </article>
+              <div class="newsletterFooter__actions">
+                  <input
+                  type="email"
+                  name="emailInput"
+                  placeholder="your email"
+                  required
+                  />
+                  <button class="btn">Subscribe</button>
+              </div>
+          </div>  
+      </section>
+  
+      <section class="information">
+          <div class="information__more">
+              <section class="learn">
+              <h3>Learn</h3>
+              <ul class="option">
+                  <li class="option__item">Introduction</li>
+                  <li class="option__item">Features</li>
+                  <li class="option__item">Staking</li>
+                  <li class="option__item">Get HEDRON</li>
+                  <li class="option__item">FAQ</li>
+              </ul>
+              </section>
+              <section class="participate">
+              <h3>Participate</h3>
+              <ul class="option">
+                  <li class="option__item">Community</li>
+                  <li class="option__item">Contributors</li>
+                  <li class="option__item">Events</li>
+                  <li class="option__item">Newsletters</li>
+              </ul>
+              </section>
+              <section class="followUs">
+              <h3>Follow us</h3>
+              <ul class="option">
+                  <li class="option__socialNetwork">
+                  <figure>
+                      <img src="../images/Facebook.svg" alt="" />
+                  </figure>
+                  </li>
+                  <li class="option__socialNetwork">
+                  <figure>
+                      <img src="../images/Instagram.svg" alt="" />
+                  </figure>
+                  </li>
+                  <li class="option__socialNetwork">
+                  <figure>
+                      <img src="../images/LinkedIN.svg" alt="" />
+                  </figure>
+                  </li>
+                  <li class="option__socialNetwork">
+                  <figure>
+                      <img src="../images/Twitter.svg" alt="" />
+                  </figure>
+                  </li>
+              </ul>
+              </section>
+          </div>
+          <section class="copy-right">
+              <p>©2022 Sample AB</p>
+          </section>
+      </section>
+    </footer>
+    <script src="../js/bootstrap.bundle.js"></script>
+  </body>
+</html>

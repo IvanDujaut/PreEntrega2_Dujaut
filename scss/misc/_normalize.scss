@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: $paragraph;
+    background-color: $background;
+    overflow-x: hidden;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: $text-secondary;
+    text-decoration: none;
+    color: $tagParagraph;
+    &:hover {
+        color: $tagParagraph;
+    }
+}
