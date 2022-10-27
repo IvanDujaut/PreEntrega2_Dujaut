@@ -1,117 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing - Project</title>
-    <link rel="stylesheet" href="../css/bootstrap.css" />
-    <link rel="stylesheet" href="../css/translated.css" />
-    <script
-      src="https://kit.fontawesome.com/479550147b.js"
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="../js/index.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a class="navbar__link" href="../index.html">
-          <img src="../images/Icon.svg" alt="" />
-        </a>
-        <ul class="navigation navigation_visible">
-          <div class="pages">
-            <li class="navigation__item">
-              <a class="navigation__link" href="./aboutUs.html">About Us!</a>
-            </li>
-          </div>
-          <div class="pages">
-            <li class="navigation__item">
-              <a class="navigation__link" href="./blog.html">Blog</a>
-            </li>
-          </div>
-          <div class="pages">
-            <li class="navigation__item">
-              <a class="navigation__link" href="./joinUs.html">Join Us!</a>
-            </li>
-          </div>
-          <div class="pages">
-            <li class="navigation__item">
-              <a class="navigation__link" href="./contactUs.html"
-                >Contact Us!</a
-              >
-            </li>
-          </div>
-        </ul>
-        <button class="navbar-toggle">
-          <i class="fas fa-bars"></i>
-        </button>
-      </nav>
-    </header>
 
-    <section id="BannerAboutUs">
-      <h1>Our team</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing - Project</title>
+  <link rel="stylesheet" href="../css/bootstrap.css" />
+  <link rel="stylesheet" href="../css/translated.css" />
+  <script src="https://kit.fontawesome.com/479550147b.js" crossorigin="anonymous"></script>
+  <script defer src="../js/index.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="navbar__link" href="../index.html">
+        <img src="../images/Icon.svg" alt="" />
+      </a>
+      <ul class="navigation navigation_visible">
+        <div class="pages">
+          <li class="navigation__item">
+            <a class="navigation__link" href="./aboutUs.html">About Us!</a>
+          </li>
+        </div>
+        <div class="pages">
+          <li class="navigation__item">
+            <a class="navigation__link" href="./blog.html">Blog</a>
+          </li>
+        </div>
+        <div class="pages">
+          <li class="navigation__item">
+            <a class="navigation__link" href="./joinUs.html">Join Us!</a>
+          </li>
+        </div>
+        <div class="pages">
+          <li class="navigation__item">
+            <a class="navigation__link" href="./contactUs.html">Contact Us!</a>
+          </li>
+        </div>
+      </ul>
+      <button class="navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <section class="container-fluid container-lg" id="BannerAboutUs">
+    <h1>We're changing the music industry</h1>
+    <span class="mx-auto description">
       <p>
-        Sapiente, veritatis soluta placeat eos voluptate minima laudantium ullam
-        at expedita.
+        Sample is a music technology company founded on the premise that music
+        services don't serve the needs of the artist. We want artists to take
+        back what is theirs, the royalties and the power of their art. That is
+        why our model is not based on traditional systems.
       </p>
-      <img src="./images/BannerAboutUs.jpg" alt="" />
-    </section>
-    <section>
-      <h2>Our Team</h2>
-      <article>
-        <figure>
-          <img src="./images/Avatar.svg" alt="" />
+      <p class="mt-lg-3">
+        We believe in the future of the internet and blockchain technology to
+        design a music publishing ecosystem, where artists do not need
+        monopoly entities such as record companies.
+      </p>
+      <p class="mt-lg-3">
+        This creates a more competitive market with better and lower cost
+        options for common artists who are not well served by record labels
+        and streaming services. We help drive innovation, inclusion and access
+        across the industry.
+      </p>
+    </span>
+    <figure class="mx-auto imgPpal">
+      <img class="imgbanner" src="../images/AboutUs.svg" alt="" />
+    </figure>
+  </section>
+  <section class="container" id="OurMission">
+    <h2>Our Mission</h2>
+    <span id="OurMission__description">
+      <p>
+        Sample's mission is to unlock the potential of human creativity by
+        giving creative artists the opportunity to make a living from their
+        art and billions of fans the opportunity to enjoy and be inspired by
+        it.
+      </p>
+      <p class="mt-5">
+        The race is on to find others who share our passion for building the
+        future of music.
+      </p>
+    </span>
+    <figure class="mx-auto imgOurMission">
+      <img src="../images/OurMission.svg" alt="" />
+    </figure>
+  </section>
+  <section class="container" id="team">
+    <h2>Our Team</h2>
+    <div class="team__profile row my-5">
+      <div class="team--description 
+                  d-flex 
+                  flex-column
+                  col-xl-4
+                  col-md-6">
+        <figure class="d-flex justify-content-center">
+          <img src="../images/perfil2.svg" alt="" />
         </figure>
-        <h3></h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          delectus a, hic commodi harum quisquam ipsam nesciunt facere ad.
-        </p>
-      </article>
-      <article>
-        <figure>
-          <img src="./images/Avatar.svg" alt="" />
+        <h3 class="d-flex justify-content-center">Developer</h3>
+        <h4 class="d-flex justify-content-center">CEO</h4>
+        <span class="d-flex justify-content-center">
+          <p class="w-75">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Temporibus eaque doloremque quidem quia
+            fugiat consequatur porro eligendi, earum illo quae,
+            saepe aperiam quaerat dicta quo velit eos maxime
+            ipsam neque?
+          </p>
+        </span>
+      </div>
+      <div class="team--description 
+                  d-flex 
+                  flex-column
+                  col-xl-4
+                  col-md-6">
+        <figure class="d-flex justify-content-center">
+          <img src="../images/perfil1.svg" alt="" />
         </figure>
-        <h3></h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          delectus a, hic commodi harum quisquam ipsam nesciunt facere ad.
-        </p>
-      </article>
-      <article>
-        <figure>
-          <img src="./images/Avatar.svg" alt="" />
+        <h3 class="d-flex justify-content-center">Developer</h3>
+        <h4 class="d-flex justify-content-center">CEO</h4>
+        <span class="d-flex justify-content-center">
+          <p class="w-75">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Temporibus eaque doloremque quidem quia
+            fugiat consequatur porro eligendi, earum illo quae,
+            saepe aperiam quaerat dicta quo velit eos maxime
+            ipsam neque?
+          </p>
+        </span>
+      </div>
+      <div class="team--description 
+                  d-flex 
+                  flex-column
+                  col-xl-4
+                  col-md-6">
+        <figure class="d-flex justify-content-center">
+          <img src="../images/perfil2.svg" alt="" />
         </figure>
-        <h3></h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          delectus a, hic commodi harum quisquam ipsam nesciunt facere ad.
-        </p>
-      </article>
-      <article>
-        <figure>
-          <img src="./images/Avatar.svg" alt="" />
+        <h3 class="d-flex justify-content-center">Developer</h3>
+        <h4 class="d-flex justify-content-center">CEO</h4>
+        <span class="d-flex justify-content-center">
+          <p class="w-75">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Temporibus eaque doloremque quidem quia
+            fugiat consequatur porro eligendi, earum illo quae,
+            saepe aperiam quaerat dicta quo velit eos maxime
+            ipsam neque?
+          </p>
+        </span>
+      </div>
+      <div class="team--description 
+                  d-flex 
+                  flex-column
+                  col-xl-4
+                  col-md-6">
+        <figure class="d-flex justify-content-center">
+          <img src="../images/perfil1.svg" alt="" />
         </figure>
-        <h3></h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          delectus a, hic commodi harum quisquam ipsam nesciunt facere ad.
-        </p>
-      </article>
-      <article>
-        <figure>
-          <img src="./images/Avatar.svg" alt="" />
+        <h3 class="d-flex justify-content-center">Developer</h3>
+        <h4 class="d-flex justify-content-center">CEO</h4>
+        <span class="d-flex justify-content-center">
+          <p class="w-75">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Temporibus eaque doloremque quidem quia
+            fugiat consequatur porro eligendi, earum illo quae,
+            saepe aperiam quaerat dicta quo velit eos maxime
+            ipsam neque?
+          </p>
+        </span>
+      </div>
+      <div class="team--description 
+                  d-flex 
+                  flex-column
+                  col-xl-4
+                  col-md-6">
+        <figure class="d-flex justify-content-center">
+          <img src="../images/perfil2.svg" alt="" />
         </figure>
-        <h3></h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          delectus a, hic commodi harum quisquam ipsam nesciunt facere ad.
-        </p>
-      </article>
-    </section>
-    <section>
-      <h2>Our Philosophy</h2>
+        <h3 class="d-flex justify-content-center">Developer</h3>
+        <h4 class="d-flex justify-content-center">CEO</h4>
+        <span class="d-flex justify-content-center">
+          <p class="w-75">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Temporibus eaque doloremque quidem quia
+            fugiat consequatur porro eligendi, earum illo quae,
+            saepe aperiam quaerat dicta quo velit eos maxime
+            ipsam neque?
+          </p>
+        </span>
+      </div>
+    </div>
+    <!--<section>
+      <h2>Our Culture</h2>
       <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Error harum
@@ -119,9 +202,9 @@
         vitae sint illo similique inventore, in labore eum impedit consectetur?
       </p>
       <figure>
-        <img src="./images/Wavy_Bus-18_Single-11 1.svg" alt="" />
+        <img src="../images/Wavy_Bus-18_Single-11 1.svg" alt="" />
       </figure>
-    </section>
+    </section>-->
     <!-- 
     ====================
     =======Footer=======
@@ -137,12 +220,7 @@
             </p>
           </article>
           <div class="newsletter__actions">
-            <input
-              type="email"
-              name="emailInput"
-              placeholder="your email"
-              required
-            />
+            <input type="email" name="emailInput" placeholder="your email" required />
             <button class="btn">Subscribe</button>
           </div>
         </div>
@@ -157,12 +235,7 @@
             </p>
           </article>
           <div class="newsletterFooter__actions">
-            <input
-              type="email"
-              name="emailInput"
-              placeholder="your email"
-              required
-            />
+            <input type="email" name="emailInput" placeholder="your email" required />
             <button class="btn">Subscribe</button>
           </div>
         </div>
@@ -221,5 +294,6 @@
       </section>
     </footer>
     <script src="../js/bootstrap.bundle.js"></script>
-  </body>
+</body>
+
 </html>

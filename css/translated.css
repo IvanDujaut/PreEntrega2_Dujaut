@@ -857,3 +857,69 @@ h4 {
           transform: skew(3deg); }
         .blog-card.alt .details {
           padding-left: 25px; } }
+
+#BannerAboutUs {
+  display: grid; }
+  #BannerAboutUs h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 8em;
+    font-style: normal;
+    font-weight: 800;
+    color: #fffffe; }
+
+#OurMission {
+  display: grid;
+  grid-template: 0.15fr 0.75fr/repeat(2, 1fr); }
+  #OurMission h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    color: #fffffe;
+    font-size: 4.8em; }
+  #OurMission span {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    font-size: 2.2em;
+    grid-area: 2/1/3/2; }
+  #OurMission .imgOurMission {
+    grid-area: 1/2/3/3; }
+
+#team h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  color: #fffffe;
+  font-size: 4.8em; }
+
+#team .team__profile img {
+  width: 30%;
+  height: 30%;
+  display: block;
+  height: auto; }
+
+#team .team__profile h3 {
+  color: #b8c1ec; }
+
+#team .team__profile h4 {
+  color: #fffffe; }
+
+#team .team__profile p {
+  font-size: 1.4em; }
+
+@media screen and (min-width: 1200px) {
+  #BannerAboutUs {
+    padding-top: 3.2rem;
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr); }
+    #BannerAboutUs h1 {
+      grid-area: 1/1/2/2;
+      text-align: start; }
+    #BannerAboutUs .description {
+      font-size: 2.2em;
+      font-style: normal;
+      font-weight: 500;
+      grid-area: 2/1/3/3;
+      letter-spacing: 0.02em; }
+    #BannerAboutUs .imgPpal {
+      grid-area: 1/2/2/3; } }
