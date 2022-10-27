@@ -1,0 +1,90 @@
+#BannerAboutUs {
+  display: grid;
+
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: $text-heading1;
+    font-style: normal;
+    font-weight: 800;
+    color: $heading1-2;
+  }
+}
+
+#OurMission {
+  display: grid;
+  grid-template: 0.15fr 0.75fr / repeat(2, 1fr);
+
+  h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    color: $heading1-2;
+    font-size: $text-heading2;
+  }
+
+  span {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    font-size: $text-paragraph;
+    grid-area: 2/1/3/2;
+  }
+
+  .imgOurMission {
+    grid-area: 1/2/3/3;
+  }
+}
+
+#team {
+  h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    color: $heading1-2;
+    font-size: $text-heading2;
+  }
+  .team__profile {  
+    img {
+      width: 30%;
+      height: 30%;
+      display: block;
+      height: auto;
+    }
+    h3 {
+      color: $paragraph;
+    }
+    h4 {
+      color: $heading1-2;
+    }
+    p {
+      font-size: 1.4em;
+    }
+  
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  #BannerAboutUs {
+    padding-top: $sp-lg;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+    h1 {
+      grid-area: 1/1/2/2;
+      text-align: start;
+    }
+
+    .description {
+      font-size: $text-paragraph;
+      font-style: normal;
+      font-weight: 500;
+      grid-area: 2/1/3/3;
+      letter-spacing: 0.02em;
+    }
+
+    .imgPpal {
+      grid-area: 1/2/2/3;
+    }
+  }
+}
