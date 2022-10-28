@@ -2,6 +2,7 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    width: 100%;
     box-shadow: 0 0 7px rgb(0, 0, 0);
     background-color: $footer;
     padding-top: $sp-md;
@@ -210,14 +211,6 @@ footer {
     
     }    
 }
-
-
-/*@media screen and (max-width: 767.98px) {
-    .newsletter {
-        display: none;
-    }
-
-}*/
 
 @media screen and (max-width: 991.98px) {
     .newsletter {

@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing - Project</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/translated.css" />
-    <script src="https://kit.fontawesome.com/479550147b.js" 
-    crossorigin="anonymous">
-    </script>
+    <script
+      src="https://kit.fontawesome.com/479550147b.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="../js/index.js"></script>
   </head>
   <body>
@@ -36,7 +37,9 @@
           </div>
           <div class="pages">
             <li class="navigation__item">
-              <a class="navigation__link" href="./contactUs.html">Contact Us!</a>
+              <a class="navigation__link" href="./contactUs.html"
+                >Contact Us!</a
+              >
             </li>
           </div>
         </ul>
@@ -44,7 +47,7 @@
           <i class="fas fa-bars"></i>
         </button>
       </nav>
-    </header> 
+    </header>
     <section id="BannerContactUs">
       <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
       <p>
@@ -53,159 +56,201 @@
       </p>
       <img src="./images/BannerContactUs.jpg" alt="" />
     </section>
-    <section>
-      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-      <p>
-        Sapiente, veritatis soluta placeat eos voluptate minima laudantium ullam
-        at expedita.
-      </p>
-      <form>
-        <input
-          type="text"
-          name="name"
-          placeholder="First Name"
-          size="50"
-          required
-        />
-        <input
-          type="text"
-          name="lastName"
-          placeholder="Last Name"
-          size="50"
-          required
-        />
-        <input
-          type="text"
-          name="subjectIput"
-          placeholder="Subject"
-          size="50"
-          required
-        />
-        <input
-          type="email"
-          name="emailIput"
-          placeholder="Email"
-          size="50"
-          required
-        />
-        <input
-          type="email"
-          name="message"
-          placeholder="Message"
-          size="100"
-          required
-        />
-        <input type="submit" value="Send" size="35" />
-      </form>
+    <section class="container" id="contact">
+      <div>
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p>
+          We are here for you. Comments and suggestions are
+          welcomed.
+        </p>
+        <form class="row" id="form" action="">
+          <div class="inputBox 
+                      col-12 
+                      col-md-4">
+            <input type="text" required>
+            <span>First Name</span>
+          </div>
+          <div class="inputBox 
+                      col-12 
+                      col-md-4">
+            <input type= "text" required>
+            <span>Last Name</span>
+          </div>
+          <div class="inputBox 
+                      col-12 
+                      col-md-4">
+            <input type="text" required>
+            <span>Subject</span>
+          </div>
+          <div class="inputBox 
+                      col-12 
+                      col-md-4">
+            <input type="email" required>
+            <span>Email</span>
+          </div>
+          <div class="inputBox 
+                      col-12 
+                      col-md-8">
+            <textarea cols="30" rows="10" required></textarea>
+            <span>Type your message...</span>
+          </div>
+        </form>
+        <div class="btn-container d-flex justify-content-center mt-3">
+          <button class="button">
+            <span class="text">Submit</span>
+            <i class="fa-solid fa-circle-check icon"></i>
+          </button> 
+        </div>  
+      </div>
     </section>
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-    <figure>
-      <img src="" alt="" />
-    </figure>
-    <figure>
-      <img src="" alt="" />
-    </figure>
-    <h3>Lorem ipsum dolor</h3>
-    <p>
-      Sapiente, veritatis soluta placeat eos voluptate minima laudantium ullam
-      at expedita.
-    </p>
+    <section class="container" id="location">
+      <h2>Our offices.</h2>
+      <div class="location__info">
+        <div>
+          <figure>
+            <img src="../images/oficinasPosadas.jpg" alt="" />
+          </figure>
+          <span class="direction">
+            <p class="d-flex justify-content-center">
+              <a href="https://www.google.com/maps/place/Wop+Coworking/@-27.3617428,-55.893065,17z/data=!3m1!4b1!4m5!3m4!1s0x9457bf55d0ad2671:0x430f8b5cd14174ad!8m2!3d-27.3617428!4d-55.8908763">
+                Av. Roque Pérez 1615
+              </a>
+            </p>
+            <p class="d-flex justify-content-center">
+              Posadas, Misiones
+            </p>
+            <p class="d-flex justify-content-center">
+              Tel: 0376 412-3205
+            </p>
+          </span>
+        </div>
+        <div>
+          <figure>
+            <img src="../images/oficinasCapital.jpg" alt="" />
+          </figure>
+          <span class="direction">
+            <p class="d-flex justify-content-center">
+              <a href="https://www.google.com/maps/place/AreaTres+El+Salvador/@-34.5860057,-58.4322028,15z/data=!4m2!3m1!1s0x0:0x357a9ecb56bdbfc9?sa=X&ved=2ahUKEwiJ5taK3IL7AhXnqpUCHS9YAP8Q_BJ6BAhnEAU">
+                El Salvador 5218
+              </a>
+            </p>
+            <p class="d-flex justify-content-center">
+              CABA
+            </p>
+            <p class="d-flex justify-content-center">
+              Tel: 011 2150-8150
+            </p>
+          </span>
+        </div>
+        <div class="location__info--desc">
+          <h3>Lorem ipsum dolor</h3>
+          <p>
+            Sapiente, veritatis soluta placeat eos 
+            voluptate minima laudantium ullam
+            at expedita.
+          </p>
+        </div>
+      </div>
+    </section>
+    
     <!-- 
     ====================
     =======Footer=======
     ====================-->
     <footer>
-        <section class="grid justify-content-center newsletter">
-            <div class="newsletter__data">
-                <article>
-                    <h4>Subscribe to our newsletter</h4>
-                    <p>
-                    Recieve upto info about latest trends and and news updates via email.
-                    </p>
-                </article>
-                <div class="newsletter__actions">
-                    <input
-                    type="email"
-                    name="emailInput"
-                    placeholder="your email"
-                    required
-                    />
-                    <button class="btn">Subscribe</button>
-                </div>
-            </div>
+      <section class="grid justify-content-center newsletter">
+        <div class="newsletter__data">
+          <article>
+            <h4>Subscribe to our newsletter</h4>
+            <p>
+              Recieve upto info about latest trends and and news updates via
+              email.
+            </p>
+          </article>
+          <div class="newsletter__actions">
+            <input
+              type="email"
+              name="emailInput"
+              placeholder="your email"
+              required
+            />
+            <button class="btn">Subscribe</button>
+          </div>
+        </div>
+      </section>
+      <section class="grid justify-content-start newsletterFooter">
+        <div class="newsletterFooter__data">
+          <article>
+            <h4>Subscribe to our newsletter</h4>
+            <p>
+              Recieve upto info about latest trends and and news updates via
+              email.
+            </p>
+          </article>
+          <div class="newsletterFooter__actions">
+            <input
+              type="email"
+              name="emailInput"
+              placeholder="your email"
+              required
+            />
+            <button class="btn">Subscribe</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="information">
+        <div class="information__more">
+          <section class="learn">
+            <h3>Learn</h3>
+            <ul class="option">
+              <li class="option__item">Introduction</li>
+              <li class="option__item">Features</li>
+              <li class="option__item">Staking</li>
+              <li class="option__item">Get HEDRON</li>
+              <li class="option__item">FAQ</li>
+            </ul>
+          </section>
+          <section class="participate">
+            <h3>Participate</h3>
+            <ul class="option">
+              <li class="option__item">Community</li>
+              <li class="option__item">Contributors</li>
+              <li class="option__item">Events</li>
+              <li class="option__item">Newsletters</li>
+            </ul>
+          </section>
+          <section class="followUs">
+            <h3>Follow us</h3>
+            <ul class="option">
+              <li class="option__socialNetwork">
+                <figure>
+                  <img src="../images/Facebook.svg" alt="" />
+                </figure>
+              </li>
+              <li class="option__socialNetwork">
+                <figure>
+                  <img src="../images/Instagram.svg" alt="" />
+                </figure>
+              </li>
+              <li class="option__socialNetwork">
+                <figure>
+                  <img src="../images/LinkedIN.svg" alt="" />
+                </figure>
+              </li>
+              <li class="option__socialNetwork">
+                <figure>
+                  <img src="../images/Twitter.svg" alt="" />
+                </figure>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <section class="copy-right">
+          <p>©2022 Sample AB</p>
         </section>
-        <section class="grid justify-content-start newsletterFooter">
-            <div class="newsletterFooter__data">
-                <article>
-                    <h4>Subscribe to our newsletter</h4>
-                    <p>
-                    Recieve upto info about latest trends and and news updates via email.
-                    </p>
-                </article>
-                <div class="newsletterFooter__actions">
-                    <input
-                    type="email"
-                    name="emailInput"
-                    placeholder="your email"
-                    required
-                    />
-                    <button class="btn">Subscribe</button>
-                </div>
-            </div>  
-        </section>
-    
-        <section class="information">
-            <div class="information__more">
-                <section class="learn">
-                <h3>Learn</h3>
-                <ul class="option">
-                    <li class="option__item">Introduction</li>
-                    <li class="option__item">Features</li>
-                    <li class="option__item">Staking</li>
-                    <li class="option__item">Get HEDRON</li>
-                    <li class="option__item">FAQ</li>
-                </ul>
-                </section>
-                <section class="participate">
-                <h3>Participate</h3>
-                <ul class="option">
-                    <li class="option__item">Community</li>
-                    <li class="option__item">Contributors</li>
-                    <li class="option__item">Events</li>
-                    <li class="option__item">Newsletters</li>
-                </ul>
-                </section>
-                <section class="followUs">
-                <h3>Follow us</h3>
-                <ul class="option">
-                    <li class="option__socialNetwork">
-                    <figure>
-                        <img src="../images/Facebook.svg" alt="" />
-                    </figure>
-                    </li>
-                    <li class="option__socialNetwork">
-                    <figure>
-                        <img src="../images/Instagram.svg" alt="" />
-                    </figure>
-                    </li>
-                    <li class="option__socialNetwork">
-                    <figure>
-                        <img src="../images/LinkedIN.svg" alt="" />
-                    </figure>
-                    </li>
-                    <li class="option__socialNetwork">
-                    <figure>
-                        <img src="../images/Twitter.svg" alt="" />
-                    </figure>
-                    </li>
-                </ul>
-                </section>
-            </div>
-            <section class="copy-right">
-                <p>©2022 Sample AB</p>
-            </section>
-        </section>
-      </footer>
-      <script src="../js/bootstrap.bundle.js"></script>
+      </section>
+    </footer>
+    <script src="../js/bootstrap.bundle.js"></script>
   </body>
 </html>
