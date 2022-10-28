@@ -223,6 +223,7 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  width: 100%;
   box-shadow: 0 0 7px black;
   background-color: #b8c1ec;
   padding-top: 1.6rem; }
@@ -363,12 +364,6 @@ footer {
           width: 20px;
           height: 20px; } }
 
-/*@media screen and (max-width: 767.98px) {
-    .newsletter {
-        display: none;
-    }
-
-}*/
 @media screen and (max-width: 991.98px) {
   .newsletter {
     display: none !important; }
@@ -923,3 +918,154 @@ h4 {
       letter-spacing: 0.02em; }
     #BannerAboutUs .imgPpal {
       grid-area: 1/2/2/3; } }
+
+#contact {
+  height: auto;
+  width: 100vw;
+  display: grid;
+  place-items: center; }
+  #contact h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    color: #fffffe;
+    font-size: 4.8em;
+    text-align: center; }
+  #contact p {
+    font-size: 2.2em;
+    text-align: center; }
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em 1em; }
+
+.inputBox {
+  position: relative; }
+  .inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fffffe;
+    background: #232946;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em; }
+    .inputBox input:valid ~ span,
+    .inputBox input:focus ~ span {
+      color: #b8c1ec;
+      transform: translateX(10px) translateY(-7px);
+      font-size: 0.65em;
+      padding: 0 10px;
+      background: #232946;
+      border-left: 1px solid #121629;
+      border-right: 1px solid #121629;
+      letter-spacing: 0.2em; }
+    .inputBox input:valid, .inputBox input:focus {
+      border: 1px solid #121629; }
+  .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    margin-left: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #b8c1ec;
+    text-transform: uppercase;
+    transition: 0.5s; }
+  .inputBox:nth-child(2) input:valid ~ span,
+  .inputBox:nth-child(2) input:focus ~ span {
+    background: #121629;
+    color: #b8c1ec;
+    border-radius: 2px; }
+  .inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fffffe;
+    background: #232946;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em; }
+    .inputBox textarea:valid ~ span,
+    .inputBox textarea:focus ~ span {
+      color: #b8c1ec;
+      transform: translateX(10px) translateY(-7px);
+      font-size: 0.65em;
+      padding: 0 10px;
+      background: #232946;
+      border-left: 1px solid #121629;
+      border-right: 1px solid #121629;
+      letter-spacing: 0.2em; }
+    .inputBox textarea:valid, .inputBox textarea:focus {
+      border: 1px solid #121629; }
+
+.button {
+  position: relative;
+  width: 15%;
+  height: 30px;
+  font-size: 10px;
+  background-color: #202231;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: width .5s;
+  border-radius: 1s; }
+
+.button * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity .25s; }
+
+.icon {
+  opacity: 0; }
+
+.button:focus {
+  width: 30px;
+  background-color: #44c08a;
+  border-radius: 50%; }
+
+.button:focus .text {
+  opacity: 0; }
+
+.button:focus .icon {
+  opacity: 1;
+  transition-delay: .5s; }
+
+#location h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  color: #fffffe;
+  font-size: 4.8em; }
+
+#location .location__info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; }
+  #location .location__info .location__info--desc {
+    flex-direction: column; }
+    #location .location__info .location__info--desc h3,
+    #location .location__info .location__info--desc h4 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      color: #b8c1ec; }
+    #location .location__info .location__info--desc p {
+      font-size: 1.8em;
+      white-space: pre-line;
+      text-align: start; }
+  #location .location__info p {
+    font-size: 1.8em;
+    text-align: start;
+    margin-bottom: 0; }
+  #location .location__info a {
+    font-size: 1.8rem;
+    color: #b8c1ec;
+    text-decoration: none; }
