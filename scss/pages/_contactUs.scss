@@ -120,7 +120,7 @@ form
     transition: opacity .25s;
 }
 
-.icon {
+.iconDisable {
     opacity: 0;
 }
 
@@ -134,7 +134,7 @@ form
     opacity: 0;
 }
 
-.button:focus .icon {
+.button:focus .iconDisable {
     opacity: 1;
     transition-delay: .5s;
 }
@@ -147,35 +147,28 @@ form
         color: $heading1-2;
         font-size: $text-heading2;
     }
+    h3,
+    h4 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        color: $paragraph;
+    }
+    p {
+        font-size: 1.8em;
+        margin-bottom: 0;
+        white-space: pre-line;
+        text-align: start;
+    }
+    a {
+        font-size: 1.8rem;
+        color: $paragraph;
+    }
     .location__info {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        .location__info--desc {
-            flex-direction: column;
-            h3,
-            h4 {
-            font-family: "Poppins";
-            font-style: normal;
-            font-weight: 500;
-            color: $paragraph;
-            }
-            p {
-                font-size: 1.8em;
-                white-space: pre-line;
-                text-align: start;
-            }
-        }
-        p {
-            font-size: 1.8em;
-            text-align: start;
-            margin-bottom: 0;
-        }
-        a {
-            font-size: 1.8rem;
-            color: $paragraph;
-            text-decoration: none;
-        }
+        margin-top: 30px;
     }
     
 }
