@@ -1,0 +1,187 @@
+.title-trendig {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: $text-paragraph;
+    letter-spacing: -0.02em;
+    color: $heading1-2;
+    text-align: center;
+    margin-bottom: 1.6rem; 
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 272px));
+    padding-right: 5em;
+    padding-left: 5em;
+    max-width: 948px;
+    gap: 16px;
+}
+
+.news-card { 
+    padding: 1.1rem 1.5rem;
+    background: $cardBackground;
+    border: 2px solid $stroke;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+
+    .news-card__blogger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 127px;
+
+        .blogguer-info {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 1.1rem 1.5rem;
+            align-items: center;
+    
+            img {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                object-fit: cover;
+                display: block;
+                box-shadow: 0 10 60px -10px rgba(13, 28, 39, 0.5);
+            }
+    
+            h3 {
+                margin-bottom: 0;
+            }
+        }
+
+        p {
+            font-family: "Quicksand";
+            font-weight: 400;
+            font-size: 1.6em;
+            color: #232946;
+            margin-bottom: 0;   
+        }
+
+        .date {
+            font-family: "Quicksand";
+            font-weight: 500;
+            color: #232946;
+            margin-bottom: 0; 
+            font-size: 1.2em;
+        } 
+        
+    }    
+}
+
+#main-blog {
+    margin-top: $sp-lg;
+    margin-bottom: $sp-xxl;
+  
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      color: $heading1-2;
+      font-size: $text-heading2;
+    }
+
+    .main-layout {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 1.6rem;
+
+        .blog-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.8rem;
+
+            .news-card__blogger {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 0px;
+                gap: 10px;
+
+                width: 336px;
+                height: 141px;
+            }
+        }
+
+        .img-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        aside {
+            display: flex;
+            flex-flow: column wrap;
+            row-gap: 3.2rem;
+            article {
+                align-content: center;
+                align-self: center;
+                h3 {
+                    font-family: 'Quicksand';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: $text-paragraph;
+                    letter-spacing: -0.02em;
+                    color: $heading1-2;
+                    text-align: center;
+                    margin-bottom: 1.6rem;
+                }
+
+                input {
+                    padding: 8px 20px;
+                    gap: 10px;
+
+                    width: 350px;
+                    height: 40px;
+
+                    background: $cardBackground;
+                    border: 2px solid $stroke;
+                    border-radius: 48px;
+                    font-size: 1.6em;
+                    font-family: 'Quicksand';
+                    color: #747474;
+                }
+
+                .options-discover {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    margin: 0 auto;
+                    gap: 0.5rem;
+
+                    .pages {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0.5rem;
+                        background: $cardBackground;
+                        border: 2px solid $stroke;
+                        border-radius: 20px;
+                    
+                        &:hover {
+                            animation: scale-up 0.8s linear both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+/*EFECTOS*/
+@keyframes scale-up {
+    0% {
+        transform:scale(1)
+    }
+    50% {
+        transform:scale(1.2)
+    }
+    100% {transform:scale(1)
+    }
+}
