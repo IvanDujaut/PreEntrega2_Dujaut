@@ -17,7 +17,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #b8c1ec;
   background-color: #232946;
   overflow-x: hidden; }
@@ -27,7 +27,7 @@ ul {
   padding-left: 0; }
 
 a {
-  font-family: 'Quicksand';
+  font-family: "Quicksand";
   font-style: normal;
   font-weight: 600;
   font-size: 1.6em;
@@ -36,6 +36,7 @@ a {
   a:hover {
     color: #121629; }
 
+/* COMPONENTE BUSQUEDA */
 .search-box {
   background: #121629;
   height: 50px;
@@ -54,7 +55,7 @@ a {
   color: #fffffe;
   float: left;
   font-size: 16px;
-  transition: .3s;
+  transition: 0.3s;
   line-height: 40px; }
   .search-input::placeholder {
     color: #fffffe; }
@@ -70,7 +71,7 @@ a {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  transition: .3s; }
+  transition: 0.3s; }
 
 .search-input:focus,
 .search-input:not(:placeholder-shown) {
@@ -86,6 +87,104 @@ a {
 .search-input:not(:placeholder-shown) + .search-btn {
   background: #fffffe;
   color: #121629; }
+
+/* COMPONENTE FORM */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em 1em; }
+
+.inputBox {
+  position: relative; }
+  .inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fffffe;
+    background: #232946;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em; }
+    .inputBox input:valid ~ span,
+    .inputBox input:focus ~ span {
+      color: #b8c1ec;
+      transform: translateX(10px) translateY(-7px);
+      font-size: 0.65em;
+      padding: 0 10px;
+      background: #121629;
+      border-radius: 2px;
+      letter-spacing: 0.2em; }
+    .inputBox input:valid, .inputBox input:focus {
+      border: 1px solid #121629; }
+  .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    margin-left: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #b8c1ec;
+    text-transform: uppercase;
+    transition: 0.5s; }
+  .inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fffffe;
+    background: #232946;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em; }
+    .inputBox textarea:valid ~ span,
+    .inputBox textarea:focus ~ span {
+      color: #b8c1ec;
+      transform: translateX(10px) translateY(-7px);
+      font-size: 0.65em;
+      padding: 0 10px;
+      background: #121629;
+      border-radius: 2px;
+      letter-spacing: 0.2em; }
+    .inputBox textarea:valid, .inputBox textarea:focus {
+      border: 1px solid #121629; }
+
+/* COMPONENTE BUTTOM FORM */
+.button {
+  position: relative;
+  width: 15%;
+  height: 30px;
+  font-size: 10px;
+  background-color: #202231;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: width 0.5s;
+  border-radius: 1s; }
+
+.button * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.25s; }
+
+.iconDisable {
+  opacity: 0; }
+
+.button:focus {
+  width: 30px;
+  background-color: #44c08a;
+  border-radius: 50%; }
+
+.button:focus .text {
+  opacity: 0; }
+
+.button:focus .iconDisable {
+  opacity: 1;
+  transition-delay: 0.5s; }
 
 /* PARTIALS */
 header {
@@ -1269,146 +1368,60 @@ p {
   width: 100vw;
   display: grid;
   place-items: center; }
-  #contact h2 {
+
+@media screen and (min-width: 280px) {
+  h2 {
     font-family: "Montserrat";
-    font-style: normal;
     font-weight: 500;
     color: #fffffe;
-    font-size: 4.8em;
-    text-align: center; }
+    font-size: 2.2em; }
+  p {
+    font-size: 1.4em;
+    white-space: pre-line; }
+  #contact h2,
   #contact p {
-    font-size: 2.2em;
     text-align: center; }
-
-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2em 1em; }
-
-.inputBox {
-  position: relative; }
-  .inputBox input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #fffffe;
-    background: #232946;
-    border-radius: 5px;
-    outline: none;
-    color: #fff;
-    font-size: 1em; }
-    .inputBox input:valid ~ span,
-    .inputBox input:focus ~ span {
+  #location {
+    margin-top: 3.2rem;
+    margin-bottom: 5rem; }
+    #location h3,
+    #location h4 {
+      font-family: "Poppins";
+      font-weight: 500;
       color: #b8c1ec;
-      transform: translateX(10px) translateY(-7px);
-      font-size: 0.65em;
-      padding: 0 10px;
-      background: #232946;
-      border-left: 1px solid #121629;
-      border-right: 1px solid #121629;
-      letter-spacing: 0.2em; }
-    .inputBox input:valid, .inputBox input:focus {
-      border: 1px solid #121629; }
-  .inputBox span {
-    position: absolute;
-    left: 0;
-    padding: 10px;
-    margin-left: 10px;
-    pointer-events: none;
-    font-size: 1em;
-    color: #b8c1ec;
-    text-transform: uppercase;
-    transition: 0.5s; }
-  .inputBox:nth-child(2) input:valid ~ span,
-  .inputBox:nth-child(2) input:focus ~ span {
-    background: #121629;
-    color: #b8c1ec;
-    border-radius: 2px; }
-  .inputBox textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #fffffe;
-    background: #232946;
-    border-radius: 5px;
-    outline: none;
-    color: #fff;
-    font-size: 1em; }
-    .inputBox textarea:valid ~ span,
-    .inputBox textarea:focus ~ span {
-      color: #b8c1ec;
-      transform: translateX(10px) translateY(-7px);
-      font-size: 0.65em;
-      padding: 0 10px;
-      background: #232946;
-      border-left: 1px solid #121629;
-      border-right: 1px solid #121629;
-      letter-spacing: 0.2em; }
-    .inputBox textarea:valid, .inputBox textarea:focus {
-      border: 1px solid #121629; }
+      font-size: c; }
+    #location .location__info {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin-top: 30px;
+      column-gap: 2rem; }
+      #location .location__info .location__info--f2f {
+        margin-bottom: 2rem; }
+        #location .location__info .location__info--f2f img {
+          border-radius: 5px; }
+        #location .location__info .location__info--f2f .direction {
+          margin-top: -1rem !important; }
+          #location .location__info .location__info--f2f .direction a {
+            font-size: 1.4rem;
+            color: #b8c1ec; } }
 
-.button {
-  position: relative;
-  width: 15%;
-  height: 30px;
-  font-size: 10px;
-  background-color: #202231;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: width .5s;
-  border-radius: 1s; }
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 3.2em; }
+  p {
+    font-size: 1.4em;
+    white-space: pre-line; } }
 
-.button * {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: opacity .25s; }
-
-.iconDisable {
-  opacity: 0; }
-
-.button:focus {
-  width: 30px;
-  background-color: #44c08a;
-  border-radius: 50%; }
-
-.button:focus .text {
-  opacity: 0; }
-
-.button:focus .iconDisable {
-  opacity: 1;
-  transition-delay: .5s; }
-
-#location h2 {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  color: #fffffe;
-  font-size: 4.8em; }
-
-#location h3,
-#location h4 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  color: #b8c1ec; }
-
-#location p {
-  font-size: 1.8em;
-  margin-bottom: 0;
-  white-space: pre-line;
-  text-align: start; }
-
-#location a {
-  font-size: 1.8rem;
-  color: #b8c1ec; }
-
-#location .location__info {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  margin-top: 30px; }
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 4.8em; }
+  h3,
+  h4 {
+    font-size: 3.2em !important; }
+  p {
+    font-size: 2.2em; }
+  .location__info h3 {
+    font-size: 1.8em !important; }
+  .location__info p {
+    font-size: 1.4em; } }

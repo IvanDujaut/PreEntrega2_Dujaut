@@ -1,179 +1,98 @@
 #contact {
-    height: auto;
-    width: 100vw;
-    display: grid;
-    place-items: center;
-    h2 {
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 500;
-        color: $heading1-2;
-        font-size: $text-heading2;
-        text-align: center;
-    }
+  height: auto;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (min-width: 280px) {
+  h2 {
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: $heading1-2;
+    font-size: $text-paragraph;
+  }
+
+  p {
+    font-size: 1.4em;
+    white-space: pre-line;
+  }
+
+  #contact {
+    h2,
     p {
-        font-size: 2.2em;
-        text-align: center;
-    }       
-}
-
-form 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2em 1em ;
-}
- 
-.inputBox {
-    position: relative;
-    input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid $secondary;
-        background: $cardTagBackground;
-        border-radius: 5px;
-        outline: none;
-        color: #fff;
-        font-size: 1em;
-        &:valid ~ span,
-        &:focus ~ span {
-            color: $paragraph;
-            transform: translateX(10px) translateY(-7px);
-            font-size: 0.65em;
-            padding: 0 10px;
-            background: $cardTagBackground;
-            border-left: 1px solid $stroke;
-            border-right: 1px solid $stroke;
-            letter-spacing: 0.2em;
-        }
-        &:valid,
-        &:focus {
-            border: 1px solid $stroke;
-        }
+      text-align: center;
     }
-    span {
-        position: absolute;
-        left: 0;
-        padding: 10px;
-        margin-left: 10px;
-        pointer-events: none;
-        font-size: 1em;
-        color: $paragraph;
-        text-transform: uppercase;
-        transition: 0.5s;    
-    }
-    &:nth-child(2) input:valid ~ span,
-    &:nth-child(2) input:focus ~ span {
-        background: $stroke;
-        color: $paragraph;
-        border-radius: 2px;
-    }
-    textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid $secondary;
-        background: $cardTagBackground;
-        border-radius: 5px;
-        outline: none;
-        color: #fff;
-        font-size: 1em;
-        &:valid ~ span,
-        &:focus ~ span {
-            color: $paragraph;
-            transform: translateX(10px) translateY(-7px);
-            font-size: 0.65em;
-            padding: 0 10px;
-            background: $cardTagBackground;
-            border-left: 1px solid $stroke;
-            border-right: 1px solid $stroke;
-            letter-spacing: 0.2em;
-        }
-        &:valid,
-        &:focus {
-            border: 1px solid $stroke;
-        }
-    }    
-}
+  }
 
-.button {
-    position: relative;
-    width: 15%;
-    height: 30px;
-    font-size: 10px;
-    background-color: #202231;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: width .5s;
-    border-radius: 1s;
-}
+  #location {
+    margin-top: $sp-lg;
+    margin-bottom: $sp-xl;
 
-.button * {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity .25s;
-}
-
-.iconDisable {
-    opacity: 0;
-}
-
-.button:focus {
-    width: 30px;
-    background-color: #44c08a;
-    border-radius: 50%;
-}
-
-.button:focus .text {
-    opacity: 0;
-}
-
-.button:focus .iconDisable {
-    opacity: 1;
-    transition-delay: .5s;
-}
-
-#location {
-    h2 {
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 500;
-        color: $heading1-2;
-        font-size: $text-heading2;
-    }
     h3,
     h4 {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 500;
-        color: $paragraph;
+      font-family: "Poppins";
+      font-weight: 500;
+      color: $paragraph;
+      font-size: c;
     }
-    p {
-        font-size: 1.8em;
-        margin-bottom: 0;
-        white-space: pre-line;
-        text-align: start;
-    }
-    a {
-        font-size: 1.8rem;
-        color: $paragraph;
-    }
+
     .location__info {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        margin-top: 30px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin-top: 30px;
+      column-gap: 2rem;
+
+      .location__info--f2f {
+        margin-bottom: 2rem;
+        img {
+          border-radius: 5px;
+        }
+        .direction {
+          margin-top: -1rem !important;
+          a {
+            font-size: 1.4rem;
+            color: $paragraph;
+          }
+        }
+      }
     }
-    
+  }
 }
-    
 
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: $text-heading3-4-5-6;
+  }
 
- 
- 
+  p {
+    font-size: 1.4em;
+    white-space: pre-line;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: $text-heading2;
+  }
+
+  h3,
+  h4 {
+    font-size: $text-heading3-4-5-6 !important;
+  }
+
+  p {
+    font-size: $text-paragraph;
+  }
+
+  .location__info {
+    h3 {
+      font-size: 1.8em !important;
+    }
+
+    p {
+      font-size: 1.4em;
+    }
+  }
+}

@@ -11,8 +11,6 @@
 .news-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 272px));
-  //padding-right: 5em;
-  //padding-left: 5em;
   justify-content: center;
   gap: 16px;
 }
