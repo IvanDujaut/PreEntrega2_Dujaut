@@ -6,7 +6,8 @@
 }
 
 @media screen and (min-width: 280px) {
-  #contact, #location {
+  #contact,
+  #location {
     h2 {
       font-family: "Montserrat";
       font-weight: 500;
@@ -26,8 +27,10 @@
     margin-top: $sp-lg;
     margin-bottom: $sp-xl;
 
-    h2, p {
+    h2,
+    p {
       text-align: start;
+      margin-top: 2rem;
     }
 
     h3,
@@ -57,25 +60,34 @@
           }
         }
       }
+
+      .location__info--desc {
+        p {
+          white-space: normal;
+        }
+      }
     }
   }
 }
 
 @media screen and (min-width: 768px) {
-  #contact, #location {
+  #contact,
+  #location {
     h2 {
       font-size: $text-heading3-4-5-6;
     }
 
     p {
       font-size: 1.4em;
-      white-space: pre-line;
+      white-space: pre-line !important;
+      margin-top: 0 !important;
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
-  #contact, #location {
+  #contact,
+  #location {
     h2 {
       font-size: $text-heading2;
     }

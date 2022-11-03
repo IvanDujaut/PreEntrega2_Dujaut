@@ -1370,21 +1370,25 @@ p {
   place-items: center; }
 
 @media screen and (min-width: 280px) {
-  #contact h2, #location h2 {
+  #contact h2,
+  #location h2 {
     font-family: "Montserrat";
     font-weight: 500;
     color: #fffffe;
     font-size: 2.2em;
     text-align: center; }
-  #contact p, #location p {
+  #contact p,
+  #location p {
     font-size: 1.4em;
     white-space: pre-line;
     text-align: center; }
   #location {
     margin-top: 3.2rem;
     margin-bottom: 5rem; }
-    #location h2, #location p {
-      text-align: start; }
+    #location h2,
+    #location p {
+      text-align: start;
+      margin-top: 2rem; }
     #location h3,
     #location h4 {
       font-family: "Poppins";
@@ -1403,23 +1407,31 @@ p {
           border-radius: 5px; }
         #location .location__info .location__info--f2f .direction a {
           font-size: 1.4rem;
-          color: #b8c1ec; } }
+          color: #b8c1ec; }
+      #location .location__info .location__info--desc p {
+        white-space: normal; } }
 
 @media screen and (min-width: 768px) {
-  #contact h2, #location h2 {
+  #contact h2,
+  #location h2 {
     font-size: 3.2em; }
-  #contact p, #location p {
+  #contact p,
+  #location p {
     font-size: 1.4em;
-    white-space: pre-line; } }
+    white-space: pre-line !important;
+    margin-top: 0 !important; } }
 
 @media screen and (min-width: 1200px) {
-  #contact h2, #location h2 {
+  #contact h2,
+  #location h2 {
     font-size: 4.8em; }
   #contact h3,
-  #contact h4, #location h3,
+  #contact h4,
+  #location h3,
   #location h4 {
     font-size: 3.2em; }
-  #contact p, #location p {
+  #contact p,
+  #location p {
     font-size: 2.2em; }
   .location__info h3 {
     font-size: 1.8em !important; }
