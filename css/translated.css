@@ -1370,26 +1370,27 @@ p {
   place-items: center; }
 
 @media screen and (min-width: 280px) {
-  h2 {
+  #contact h2, #location h2 {
     font-family: "Montserrat";
     font-weight: 500;
     color: #fffffe;
-    font-size: 2.2em; }
-  p {
+    font-size: 2.2em;
+    text-align: center; }
+  #contact p, #location p {
     font-size: 1.4em;
-    white-space: pre-line; }
-  #contact h2,
-  #contact p {
+    white-space: pre-line;
     text-align: center; }
   #location {
     margin-top: 3.2rem;
     margin-bottom: 5rem; }
+    #location h2, #location p {
+      text-align: start; }
     #location h3,
     #location h4 {
       font-family: "Poppins";
       font-weight: 500;
       color: #b8c1ec;
-      font-size: c; }
+      font-size: 1.6em; }
     #location .location__info {
       display: flex;
       flex-flow: row wrap;
@@ -1400,28 +1401,27 @@ p {
         margin-bottom: 2rem; }
         #location .location__info .location__info--f2f img {
           border-radius: 5px; }
-        #location .location__info .location__info--f2f .direction {
-          margin-top: -1rem !important; }
-          #location .location__info .location__info--f2f .direction a {
-            font-size: 1.4rem;
-            color: #b8c1ec; } }
+        #location .location__info .location__info--f2f .direction a {
+          font-size: 1.4rem;
+          color: #b8c1ec; } }
 
 @media screen and (min-width: 768px) {
-  h2 {
+  #contact h2, #location h2 {
     font-size: 3.2em; }
-  p {
+  #contact p, #location p {
     font-size: 1.4em;
     white-space: pre-line; } }
 
 @media screen and (min-width: 1200px) {
-  h2 {
+  #contact h2, #location h2 {
     font-size: 4.8em; }
-  h3,
-  h4 {
-    font-size: 3.2em !important; }
-  p {
+  #contact h3,
+  #contact h4, #location h3,
+  #location h4 {
+    font-size: 3.2em; }
+  #contact p, #location p {
     font-size: 2.2em; }
   .location__info h3 {
     font-size: 1.8em !important; }
   .location__info p {
-    font-size: 1.4em; } }
+    font-size: 1.4em !important; } }
