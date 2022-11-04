@@ -1007,25 +1007,6 @@ h4 {
     font-weight: 800;
     color: #fffffe; }
 
-#OurMission {
-  display: grid;
-  grid-template: 0.15fr 0.75fr/repeat(2, 1fr); }
-  #OurMission h2 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    color: #fffffe;
-    font-size: 4.8em; }
-  #OurMission span {
-    font-family: "Quicksand";
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0.01em;
-    font-size: 2.2em;
-    grid-area: 2/1/3/2; }
-  #OurMission .imgOurMission {
-    grid-area: 1/2/3/3; }
-
 #team h2 {
   font-family: "Montserrat";
   font-style: normal;
@@ -1048,6 +1029,80 @@ h4 {
 #team .team__profile p {
   font-size: 1.4em; }
 
+@media screen and (min-width: 280px) {
+  #BannerAboutUs {
+    padding: 1.6rem 3.2rem 0; }
+    #BannerAboutUs h1 {
+      font-size: 3.2em;
+      white-space: pre-line; }
+    #BannerAboutUs p {
+      width: 100%;
+      font-size: 1.4em;
+      font-style: normal;
+      font-weight: 500;
+      grid-row: 2/3;
+      letter-spacing: 0.02em;
+      max-width: 90%; }
+    #BannerAboutUs .imgPpal .imgbanner {
+      width: 100%;
+      height: 100%; }
+  #OurMission {
+    display: grid;
+    padding: 1.6rem 3.2rem 0; }
+    #OurMission h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      color: #fffffe;
+      font-size: 2.2em; }
+    #OurMission p {
+      width: 100%;
+      font-size: 1.4em;
+      font-style: normal;
+      font-weight: 500;
+      grid-row: 2/3;
+      letter-spacing: 0.02em;
+      max-width: 90%; }
+    #OurMission .imgOurMission img {
+      width: 100%;
+      height: 100%; }
+  #team h2 {
+    padding: 1.6rem 3.2rem 0;
+    font-size: 2.2em; } }
+
+@media screen and (min-width: 576px) {
+  #BannerAboutUs h1 {
+    white-space: inherit; }
+  #BannerAboutUs p {
+    font-size: 1.6em; }
+  #OurMission p {
+    font-size: 1.6em; }
+  #team .team__profile p {
+    font-size: 1.6em; } }
+
+@media screen and (min-width: 768px) {
+  #BannerAboutUs h1 {
+    font-size: 4.8em;
+    white-space: inherit; }
+  #OurMission h2,
+  #team h2 {
+    color: #fffffe;
+    font-size: 3.2em; } }
+
+@media screen and (min-width: 992px) {
+  #BannerAboutUs h1 {
+    font-size: 8em;
+    white-space: inherit; }
+  #BannerAboutUs p {
+    font-size: 2.2em; }
+  #OurMission h2,
+  #team h2 {
+    color: #fffffe;
+    font-size: 4.8em; }
+  #OurMission .team__profile p,
+  #team .team__profile p {
+    font-size: 2.2em; } }
+
 @media screen and (min-width: 1200px) {
   #BannerAboutUs {
     padding-top: 3.2rem;
@@ -1056,13 +1111,29 @@ h4 {
       grid-area: 1/1/2/2;
       text-align: start; }
     #BannerAboutUs .description {
-      font-size: 2.2em;
-      font-style: normal;
-      font-weight: 500;
       grid-area: 2/1/3/3;
       letter-spacing: 0.02em; }
     #BannerAboutUs .imgPpal {
-      grid-area: 1/2/2/3; } }
+      grid-area: 1/2/2/3; }
+  #OurMission {
+    display: grid;
+    grid-template: 0.15fr 0.75fr/repeat(2, 1fr); }
+    #OurMission h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      color: #fffffe;
+      font-size: 4.8em; }
+    #OurMission p {
+      font-size: 2.2em;
+      letter-spacing: 0.01em;
+      grid-area: 2/1/3/2; }
+    #OurMission .imgOurMission {
+      grid-area: 1/2/3/3; }
+  #team .team__profile h3 {
+    font-size: 3.2em; }
+  #team .team__profile h4 {
+    font-size: 2.2em; } }
 
 .title-trendig {
   font-family: "Montserrat";
