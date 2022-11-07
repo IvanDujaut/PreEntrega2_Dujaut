@@ -1131,9 +1131,11 @@ h4 {
     #OurMission .imgOurMission {
       grid-area: 1/2/3/3; }
   #team .team__profile h3 {
-    font-size: 3.2em; }
+    font-size: 2.2em; }
   #team .team__profile h4 {
-    font-size: 2.2em; } }
+    font-size: 1.8em; }
+  #team .team__profile p {
+    font-size: 1.4em; } }
 
 .title-trendig {
   font-family: "Montserrat";

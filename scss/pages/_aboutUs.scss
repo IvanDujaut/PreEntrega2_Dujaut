@@ -201,10 +201,13 @@
 
   #team .team__profile {
     h3 {
-      font-size: $text-heading3-4-5-6;
+      font-size: $text-paragraph;
     }
     h4 {
-      font-size: $text-paragraph;
+      font-size: 1.8em;
+    }
+    p {
+      font-size: 1.4em;
     }
 
   }
