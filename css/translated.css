@@ -899,10 +899,6 @@ h4 {
     font-size: 0.9rem; }
     .blog-card .details ul li {
       display: inline-block; }
-    .blog-card .details .author:before {
-      font-family: FontAwesome;
-      margin-right: 10px;
-      content: "\f007"; }
     .blog-card .details .date:before {
       font-family: FontAwesome;
       margin-right: 10px;

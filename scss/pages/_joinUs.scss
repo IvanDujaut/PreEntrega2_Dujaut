@@ -86,12 +86,6 @@ h4 {
     ul li {
       display: inline-block;
     }
-    .author:before {
-      font-family: FontAwesome;
-      margin-right: 10px;
-      content: "\f007";
-    }
-
     .date:before {
       font-family: FontAwesome;
       margin-right: 10px;
@@ -255,7 +249,4 @@ h4 {
       font-size: $text-paragraph;
     }
   }
-}
-
-@media screen and (min-width: 1200px) {
 }
