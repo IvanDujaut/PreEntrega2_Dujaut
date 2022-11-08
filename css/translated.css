@@ -839,15 +839,13 @@ footer {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  color: #fffffe;
-  font-size: 4.8em; }
+  color: #fffffe; }
 
 #Jobs p {
   font-family: "Quicksand";
   font-style: normal;
   font-weight: 500;
-  letter-spacing: 0.01em;
-  font-size: 2.2em; }
+  letter-spacing: 0.01em; }
 
 h3,
 h4 {
@@ -908,7 +906,7 @@ h4 {
     .blog-card .details .date:before {
       font-family: FontAwesome;
       margin-right: 10px;
-      content: "\f133"; }
+      content: "\f041"; }
     .blog-card .details .tags ul:before {
       font-family: FontAwesome;
       content: "\f02b";
@@ -921,21 +919,17 @@ h4 {
     padding: 1rem;
     background: #fff;
     position: relative;
-    z-index: 1;
-    /*h1,
-		h2 {
-			font-family: Poppins, sans-serif;
-		}*/ }
+    z-index: 1; }
     .blog-card .description h3 {
       line-height: 1;
       margin: 0;
       font-size: 2.2em;
       font-weight: 600;
       letter-spacing: 0.02em;
-      font-size: 3.2em; }
+      font-size: 2.2em; }
     .blog-card .description h4 {
       color: #a2a2a2;
-      font-size: 1.8em;
+      font-size: 1.6em;
       margin-top: 1rem; }
     .blog-card .description .read-more {
       text-align: right; }
@@ -953,6 +947,8 @@ h4 {
         .blog-card .description .read-more a:hover:after {
           margin-left: 5px;
           opacity: 1; }
+    .blog-card .description p {
+      font-size: 1.4em !important; }
   .blog-card p {
     color: #232946;
     position: relative;
@@ -978,7 +974,7 @@ h4 {
         flex-basis: 90%;
         height: auto; }
       .blog-card .description {
-        flex-basis: 60%; }
+        flex-basis: 90%; }
         .blog-card .description:before {
           transform: skewX(-3deg);
           content: "";
@@ -997,6 +993,29 @@ h4 {
           transform: skew(3deg); }
         .blog-card.alt .details {
           padding-left: 25px; } }
+
+@media screen and (min-width: 280px) {
+  #Jobs {
+    margin-top: 1.6rem;
+    margin-bottom: 5rem; }
+    #Jobs h2 {
+      font-size: 2.2em; }
+    #Jobs p {
+      font-size: 1.4em; } }
+
+@media screen and (min-width: 576px) {
+  #Jobs p {
+    font-size: 1.6em; } }
+
+@media screen and (min-width: 768px) {
+  #Jobs h2 {
+    font-size: 3.2em; } }
+
+@media screen and (min-width: 992px) {
+  #Jobs h2 {
+    font-size: 4.8em; }
+  #Jobs p {
+    font-size: 2.2em; } }
 
 #BannerAboutUs {
   display: grid; }
@@ -1097,7 +1116,6 @@ h4 {
     font-size: 2.2em; }
   #OurMission h2,
   #team h2 {
-    color: #fffffe;
     font-size: 4.8em; }
   #OurMission .team__profile p,
   #team .team__profile p {
@@ -1135,7 +1153,7 @@ h4 {
   #team .team__profile h4 {
     font-size: 1.8em; }
   #team .team__profile p {
-    font-size: 1.4em; } }
+    font-size: 1.6em; } }
 
 .title-trendig {
   font-family: "Montserrat";
