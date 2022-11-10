@@ -153,7 +153,7 @@ form {
 /* COMPONENTE BUTTOM FORM */
 .button {
   position: relative;
-  width: 15%;
+  width: 4.2rem;
   height: 30px;
   font-size: 10px;
   background-color: #202231;
@@ -899,11 +899,7 @@ h4 {
     font-size: 0.9rem; }
     .blog-card .details ul li {
       display: inline-block; }
-    .blog-card .details .author:before {
-      font-family: FontAwesome;
-      margin-right: 10px;
-      content: "\f007"; }
-    .blog-card .details .date:before {
+    .blog-card .details .location:before {
       font-family: FontAwesome;
       margin-right: 10px;
       content: "\f041"; }
