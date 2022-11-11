@@ -286,7 +286,8 @@ header {
         height: calc(100% - 80px);
         overflow-y: auto;
         left: 0;
-        transition: left 0.3s; }
+        transition: left 0.3s;
+        z-index: 10; }
         header .navbar .navigation .pages {
           display: flex;
           flex-direction: row;
