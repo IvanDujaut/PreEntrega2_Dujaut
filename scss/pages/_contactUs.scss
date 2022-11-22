@@ -1,3 +1,25 @@
+#BannerContactUs {
+  display: grid;
+
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: $text-heading1;
+    font-style: normal;
+    font-weight: 800;
+    color: $heading1-2;
+  }
+}
+
+#contact {
+  h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    color: #fffffe;
+    text-align: center;
+  }
+}
+
 #contact {
   height: auto;
   width: 100vw;
@@ -6,6 +28,28 @@
 }
 
 @media screen and (min-width: 280px) {
+  #BannerContactUs {
+    padding: $sp-md 3.2rem 0;
+
+    h1 {
+      font-size: $text-heading3-4-5-6;
+      white-space: pre-line;
+    }
+
+    p {
+      width: 100%;
+      font-size: 1.4em;
+      font-style: normal;
+      font-weight: 500;
+      grid-row: 2/3;
+      letter-spacing: 0.02em;
+    }
+
+    .imgPpal .imgbanner {
+      width: 100%;
+      height: 100%;
+    }
+  }
   #contact,
   #location {
     h2 {
@@ -70,7 +114,34 @@
   }
 }
 
+@media screen and (min-width: 576px) {
+  #BannerContactUs {
+    h1 {
+      white-space: inherit;
+    }
+    p {
+      font-size: $text-secondary;
+    }
+  }
+  #contact,
+  #location {
+    p {
+      font-size: 1.6em;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
+  #BannerContactUs {
+    h1 {
+      font-size: $text-heading2;
+      white-space: inherit;
+    }
+    .imgPpal .imgbanner {
+      width: 100%;
+      height: 90%;
+    }
+  }
   #contact,
   #location {
     h2 {
@@ -78,27 +149,75 @@
     }
 
     p {
-      font-size: 1.4em;
+      font-size: 1.8em;
       white-space: pre-line !important;
       margin-top: 0 !important;
     }
   }
 }
 
+@media screen and (min-width: 992px) {
+  #BannerContactUs {
+    padding-top: 1.6rem;
+    grid-template-rows: repeat(3, 0.1fr);
+    h1 {
+      grid-row: 1/2;
+      font-size: $text-heading1;
+      white-space: inherit;
+    }
+    p {
+      grid-row: 2/3;
+      letter-spacing: 0.02em;
+      font-size: $text-paragraph;
+    }
+
+    .imgPpal {
+      grid-row: 3/4;
+      justify-content: center;
+      align-self: center;
+    }
+  }
+  #contact,
+  #location {
+    p {
+      font-size: $text-paragraph;
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
+  #BannerContactUs {
+    padding-top: $sp-lg;
+    padding-bottom: $sp-xxl;
+    grid-template: 0.5fr 0.3fr / 1fr 0.85fr;
+
+    h1 {
+      font-size: $text-heading1;
+      text-align: start;
+    }
+
+    .description {
+      font-style: normal;
+      font-weight: 500;
+      grid-area: 2/1/3/2;
+      letter-spacing: 0.02em;
+    }
+
+    .imgPpal {
+      grid-area: 1/2/3/3 !important;
+      .imgbanner {
+        width: 100%;
+        height: 90%;
+      }
+    }
+  }
   #contact,
   #location {
     h2 {
       font-size: $text-heading2;
     }
-
-    h3,
     h4 {
       font-size: $text-heading3-4-5-6;
-    }
-
-    p {
-      font-size: $text-paragraph;
     }
   }
 
