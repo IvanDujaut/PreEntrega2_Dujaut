@@ -1208,111 +1208,147 @@ h4 {
       margin-bottom: 0;
       font-size: 1.2em; }
 
+#BannerBlog {
+  display: grid; }
+  #BannerBlog h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 8em;
+    font-style: normal;
+    font-weight: 800;
+    color: #fffffe; }
+
+#trendingNews {
+  margin: 5rem 0 5rem 0;
+  padding: 0 3.2rem 0; }
+
 @media screen and (min-width: 280px) {
-  #main-container .both-section {
-    display: flex;
-    flex-flow: row wrap-reverse;
-    justify-content: center; }
-    #main-container .both-section .main-layout {
-      padding: 1rem;
+  #BannerBlog {
+    padding: 1.6rem 3.2rem 0; }
+    #BannerBlog h1 {
+      font-size: 3.2em;
+      white-space: pre-line; }
+    #BannerBlog p {
+      width: 100%;
+      font-size: 1.4em;
+      font-style: normal;
+      font-weight: 500;
+      grid-row: 2/3;
+      letter-spacing: 0.02em; }
+    #BannerBlog .imgPpal .imgbanner {
+      width: 100%;
+      height: 100%; }
+  #main-container {
+    padding: 1.6rem 3.2rem 0; }
+    #main-container .both-section {
       display: flex;
-      flex-direction: column;
-      row-gap: 1.8rem; }
-      #main-container .both-section .main-layout .container-article-fig {
+      flex-flow: row wrap-reverse;
+      justify-content: center; }
+      #main-container .both-section .main-layout {
+        padding: 1rem;
         display: flex;
-        justify-content: space-between; }
-        #main-container .both-section .main-layout .container-article-fig .news-card__general {
-          padding: 1.1rem 1.5rem;
-          background: #fffffe;
-          border: 2px solid #121629;
-          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-          border-radius: 10px;
-          width: 100%;
-          max-width: 300px;
-          min-width: 220px; }
-          #main-container .both-section .main-layout .container-article-fig .news-card__general .news-card__publication {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 127px; }
-            #main-container .both-section .main-layout .container-article-fig .news-card__general .news-card__publication .about-writer {
-              display: flex;
-              flex-flow: row nowrap;
-              gap: 1.1rem 1.5rem;
-              align-items: center; }
-              #main-container .both-section .main-layout .container-article-fig .news-card__general .news-card__publication .about-writer img {
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                object-fit: cover;
-                display: block;
-                box-shadow: 0 10 60px -10px rgba(13, 28, 39, 0.5); }
-              #main-container .both-section .main-layout .container-article-fig .news-card__general .news-card__publication .about-writer h3 {
-                margin-bottom: 0; }
-            #main-container .both-section .main-layout .container-article-fig .news-card__general .news-card__publication p {
-              font-family: "Quicksand";
-              font-weight: 400;
-              font-size: 1.4em;
-              color: #232946;
-              margin-bottom: 0; }
-            #main-container .both-section .main-layout .container-article-fig .news-card__general .news-card__publication .date {
-              font-family: "Quicksand";
-              font-weight: 500;
-              color: #232946;
-              margin-bottom: 0;
-              font-size: 1.2em; }
-        #main-container .both-section .main-layout .container-article-fig .news-fig {
-          display: none; }
-    #main-container .both-section aside {
-      display: flex;
-      flex-flow: column wrap;
-      padding: 0;
-      row-gap: 3.2rem; }
-      #main-container .both-section aside article {
-        align-content: center;
-        align-self: center; }
-        #main-container .both-section aside article h3 {
-          font-family: "Quicksand";
-          font-style: normal;
-          font-weight: 700;
-          letter-spacing: -0.02em;
-          color: #fffffe;
-          text-align: center;
-          margin-bottom: 1.6rem; }
-        #main-container .both-section aside article .options-discover {
+        flex-direction: column;
+        row-gap: 1.8rem; }
+        #main-container .both-section .main-layout .container-article-fig {
           display: flex;
-          flex-flow: row wrap;
-          justify-content: center;
-          margin: 0 auto;
-          gap: 0.5rem; }
-          #main-container .both-section aside article .options-discover .pages {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 0.5rem;
+          justify-content: space-between; }
+          #main-container .both-section .main-layout .container-article-fig .news-card__general {
+            padding: 1.1rem 1.5rem;
             background: #fffffe;
             border: 2px solid #121629;
-            border-radius: 20px; }
-            #main-container .both-section aside article .options-discover .pages:hover {
-              animation: scale-up 0.8s linear both; }
-            #main-container .both-section aside article .options-discover .pages a {
-              font-size: 1.2rem; }
-        #main-container .both-section aside article .search-box {
-          height: 30px;
-          border-radius: 30px; }
-        #main-container .both-section aside article .search-input {
-          font-size: 12px; }
-        #main-container .both-section aside article .search-btn {
-          width: 20px;
-          height: 20px; }
-        #main-container .both-section aside article .search-input:focus,
-        #main-container .both-section aside article .search-input:not(:placeholder-shown) {
-          width: 200px; }
-        #main-container .both-section aside article .search-box:hover > .search-input {
-          width: 200px; } }
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 300px;
+            min-width: 220px; }
+            #main-container .both-section .main-layout .container-article-fig .news-card__general .news-card__publication {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              height: 127px; }
+              #main-container .both-section .main-layout .container-article-fig .news-card__general .news-card__publication .about-writer {
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 1.1rem 1.5rem;
+                align-items: center; }
+                #main-container .both-section .main-layout .container-article-fig .news-card__general .news-card__publication .about-writer img {
+                  width: 32px;
+                  height: 32px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                  display: block;
+                  box-shadow: 0 10 60px -10px rgba(13, 28, 39, 0.5); }
+                #main-container .both-section .main-layout .container-article-fig .news-card__general .news-card__publication .about-writer h3 {
+                  margin-bottom: 0; }
+              #main-container .both-section .main-layout .container-article-fig .news-card__general .news-card__publication p {
+                font-family: "Quicksand";
+                font-weight: 400;
+                font-size: 1.4em;
+                color: #232946;
+                margin-bottom: 0; }
+              #main-container .both-section .main-layout .container-article-fig .news-card__general .news-card__publication .date {
+                font-family: "Quicksand";
+                font-weight: 500;
+                color: #232946;
+                margin-bottom: 0;
+                font-size: 1.2em; }
+          #main-container .both-section .main-layout .container-article-fig .news-fig {
+            display: none; }
+      #main-container .both-section aside {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0;
+        row-gap: 3.2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 30px 0 60px; }
+        #main-container .both-section aside article {
+          align-content: center;
+          align-self: center; }
+          #main-container .both-section aside article h3 {
+            font-family: "Quicksand";
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #fffffe;
+            text-align: center;
+            margin-bottom: 1.6rem; }
+          #main-container .both-section aside article .options-discover {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            margin: 0 auto;
+            gap: 0.5rem; }
+            #main-container .both-section aside article .options-discover .pages {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              padding: 0.5rem;
+              background: #fffffe;
+              border: 2px solid #121629;
+              border-radius: 20px; }
+              #main-container .both-section aside article .options-discover .pages:hover {
+                animation: scale-up 0.8s linear both; }
+              #main-container .both-section aside article .options-discover .pages a {
+                font-size: 1.2rem; }
+          #main-container .both-section aside article .search-box {
+            height: 30px;
+            border-radius: 30px; }
+          #main-container .both-section aside article .search-input {
+            font-size: 12px; }
+          #main-container .both-section aside article .search-btn {
+            width: 20px;
+            height: 20px; }
+          #main-container .both-section aside article .search-input:focus,
+          #main-container .both-section aside article .search-input:not(:placeholder-shown) {
+            width: 200px; }
+          #main-container .both-section aside article .search-box:hover > .search-input {
+            width: 200px; } }
 
 @media screen and (min-width: 576px) {
+  #BannerBlog h1 {
+    white-space: inherit; }
+  #BannerBlog p {
+    font-size: 1.6em; }
   .news-card .news-card__blogger p {
     font-size: 1.6em; }
   #main-container
@@ -1337,6 +1373,12 @@ p {
     padding: 0 10rem; } }
 
 @media screen and (min-width: 768px) {
+  #BannerBlog h1 {
+    font-size: 4.8em;
+    white-space: inherit; }
+  #BannerBlog .imgPpal .imgbanner {
+    width: 100%;
+    height: 90%; }
   #main-container .both-section {
     display: flex;
     flex-flow: row wrap-reverse;
@@ -1382,7 +1424,9 @@ p {
       display: flex;
       flex-flow: column wrap;
       padding: 0;
-      row-gap: 3.2rem; }
+      row-gap: 3.2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 30px 0 60px; }
       #main-container .both-section aside article {
         align-content: center;
         align-self: center;
@@ -1421,6 +1465,22 @@ p {
           height: 30px; } }
 
 @media screen and (min-width: 992px) {
+  #BannerBlog {
+    padding-top: 1.6rem;
+    grid-template-rows: repeat(3, 0.1fr); }
+    #BannerBlog h1 {
+      grid-row: 1/2;
+      font-size: 8em;
+      white-space: inherit; }
+    #BannerBlog p {
+      grid-row: 2/3;
+      letter-spacing: 0.02em;
+      font-size: 2.2em;
+      text-align: start; }
+    #BannerBlog .imgPpal {
+      grid-row: 3/4;
+      justify-content: center;
+      align-self: center; }
   #main-container {
     margin-top: 3.2rem;
     margin-bottom: 8rem; }
@@ -1432,13 +1492,32 @@ p {
       font-size: 4.8em; }
     #main-container .both-section {
       display: grid;
-      grid-template-columns: 1fr 1fr; }
+      grid-template-columns: 1fr 1fr;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 30px 0 60px; }
       #main-container .both-section aside {
-        padding: 1rem 8rem; }
+        padding: 1rem 8rem;
+        border-top: none; }
         #main-container .both-section aside article {
           padding: 0; } }
 
 @media screen and (min-width: 1200px) {
+  #BannerBlog {
+    padding-top: 3.2rem;
+    grid-template: 0.5fr 0.3fr / 1fr 0.85fr; }
+    #BannerBlog h1 {
+      font-size: 8em;
+      text-align: start; }
+    #BannerBlog .description {
+      font-style: normal;
+      font-weight: 500;
+      grid-area: 2/1/3/2;
+      letter-spacing: 0.02em; }
+    #BannerBlog .imgPpal {
+      grid-area: 1/2/3/3 !important; }
+      #BannerBlog .imgPpal .imgbanner {
+        width: 100%;
+        height: 90%; }
   aside {
     padding: 1rem 10rem !important; } }
 
@@ -1451,6 +1530,22 @@ p {
   100% {
     transform: scale(1); } }
 
+#BannerContactUs {
+  display: grid; }
+  #BannerContactUs h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 8em;
+    font-style: normal;
+    font-weight: 800;
+    color: #fffffe; }
+
+#contact h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  color: #fffffe;
+  text-align: center; }
+
 #contact {
   height: auto;
   width: 100vw;
@@ -1458,6 +1553,21 @@ p {
   place-items: center; }
 
 @media screen and (min-width: 280px) {
+  #BannerContactUs {
+    padding: 1.6rem 3.2rem 0; }
+    #BannerContactUs h1 {
+      font-size: 3.2em;
+      white-space: pre-line; }
+    #BannerContactUs p {
+      width: 100%;
+      font-size: 1.4em;
+      font-style: normal;
+      font-weight: 500;
+      grid-row: 2/3;
+      letter-spacing: 0.02em; }
+    #BannerContactUs .imgPpal .imgbanner {
+      width: 100%;
+      height: 100%; }
   #contact h2,
   #location h2 {
     font-family: "Montserrat";
@@ -1499,28 +1609,75 @@ p {
       #location .location__info .location__info--desc p {
         white-space: normal; } }
 
+@media screen and (min-width: 576px) {
+  #BannerContactUs h1 {
+    white-space: inherit; }
+  #BannerContactUs p {
+    font-size: 1.6em; }
+  #contact p,
+  #location p {
+    font-size: 1.6em; } }
+
 @media screen and (min-width: 768px) {
+  #BannerContactUs h1 {
+    font-size: 4.8em;
+    white-space: inherit; }
+  #BannerContactUs .imgPpal .imgbanner {
+    width: 100%;
+    height: 90%; }
   #contact h2,
   #location h2 {
     font-size: 3.2em; }
   #contact p,
   #location p {
-    font-size: 1.4em;
+    font-size: 1.8em;
     white-space: pre-line !important;
     margin-top: 0 !important; } }
 
+@media screen and (min-width: 992px) {
+  #BannerContactUs {
+    padding-top: 1.6rem;
+    grid-template-rows: repeat(3, 0.1fr); }
+    #BannerContactUs h1 {
+      grid-row: 1/2;
+      font-size: 8em;
+      white-space: inherit; }
+    #BannerContactUs p {
+      grid-row: 2/3;
+      letter-spacing: 0.02em;
+      font-size: 2.2em; }
+    #BannerContactUs .imgPpal {
+      grid-row: 3/4;
+      justify-content: center;
+      align-self: center; }
+  #contact p,
+  #location p {
+    font-size: 2.2em; } }
+
 @media screen and (min-width: 1200px) {
+  #BannerContactUs {
+    padding-top: 3.2rem;
+    padding-bottom: 8rem;
+    grid-template: 0.5fr 0.3fr / 1fr 0.85fr; }
+    #BannerContactUs h1 {
+      font-size: 8em;
+      text-align: start; }
+    #BannerContactUs .description {
+      font-style: normal;
+      font-weight: 500;
+      grid-area: 2/1/3/2;
+      letter-spacing: 0.02em; }
+    #BannerContactUs .imgPpal {
+      grid-area: 1/2/3/3 !important; }
+      #BannerContactUs .imgPpal .imgbanner {
+        width: 100%;
+        height: 90%; }
   #contact h2,
   #location h2 {
     font-size: 4.8em; }
-  #contact h3,
   #contact h4,
-  #location h3,
   #location h4 {
     font-size: 3.2em; }
-  #contact p,
-  #location p {
-    font-size: 2.2em; }
   .location__info h3 {
     font-size: 1.8em !important; }
   .location__info p {
