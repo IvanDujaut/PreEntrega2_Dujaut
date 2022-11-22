@@ -646,7 +646,6 @@ footer {
   box-shadow: 0 18px 200px -60px black;
   border-radius: 20px;
   position: relative;
-  /*backdrop-filter: blur(15px);*/
   background-color: #fffffe;
   border: 2px solid #121629;
   padding: 1.6rem;
@@ -869,7 +868,7 @@ h4 {
   .blog-card a {
     color: inherit; }
     .blog-card a:hover {
-      color: #5ad67d; }
+      color: #121629; }
   .blog-card:hover .photo {
     transform: scale(1.3) rotate(3deg); }
   .blog-card .meta {
@@ -894,7 +893,7 @@ h4 {
     margin: auto;
     transition: left 0.2s;
     background: rgba(0, 0, 0, 0.6);
-    color: #fff;
+    color: #fffffe;
     padding: 10px;
     width: 100%;
     font-size: 0.9rem; }
@@ -914,7 +913,7 @@ h4 {
         margin-left: -4px; }
   .blog-card .description {
     padding: 1rem;
-    background: #fff;
+    background: #fffffe;
     position: relative;
     z-index: 1; }
     .blog-card .description h3 {
@@ -925,7 +924,7 @@ h4 {
       letter-spacing: 0.02em;
       font-size: 2.2em; }
     .blog-card .description h4 {
-      color: #a2a2a2;
+      color: #b8c1ec;
       font-size: 1.6em;
       margin-top: 1rem; }
     .blog-card .description .read-more {
@@ -957,7 +956,7 @@ h4 {
         content: "";
         position: absolute;
         height: 5px;
-        background: #5ad67d;
+        background: #121629;
         width: 35px;
         top: -0.75rem;
         border-radius: 3px; }
@@ -1218,8 +1217,7 @@ h4 {
     color: #fffffe; }
 
 #trendingNews {
-  margin: 5rem 0 5rem 0;
-  padding: 0 3.2rem 0; }
+  padding: 5rem 3.2rem; }
 
 @media screen and (min-width: 280px) {
   #BannerBlog {
@@ -1238,7 +1236,7 @@ h4 {
       width: 100%;
       height: 100%; }
   #main-container {
-    padding: 1.6rem 3.2rem 0; }
+    padding: 1.6rem 3.2rem 6rem; }
     #main-container .both-section {
       display: flex;
       flex-flow: row wrap-reverse;
@@ -1299,7 +1297,7 @@ h4 {
         padding: 0;
         row-gap: 3.2rem;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
-        padding: 30px 0 60px; }
+        padding-top: 30px; }
         #main-container .both-section aside article {
           align-content: center;
           align-self: center; }
@@ -1426,7 +1424,7 @@ p {
       padding: 0;
       row-gap: 3.2rem;
       border-top: 1px solid rgba(255, 255, 255, 0.2);
-      padding: 30px 0 60px; }
+      padding-top: 30px; }
       #main-container .both-section aside article {
         align-content: center;
         align-self: center;
@@ -1482,8 +1480,7 @@ p {
       justify-content: center;
       align-self: center; }
   #main-container {
-    margin-top: 3.2rem;
-    margin-bottom: 8rem; }
+    margin-top: 3.2rem; }
     #main-container h2 {
       font-family: "Montserrat";
       font-style: normal;
@@ -1494,7 +1491,7 @@ p {
       display: grid;
       grid-template-columns: 1fr 1fr;
       border-top: 1px solid rgba(255, 255, 255, 0.2);
-      padding: 30px 0 60px; }
+      padding-top: 30px; }
       #main-container .both-section aside {
         padding: 1rem 8rem;
         border-top: none; }

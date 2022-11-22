@@ -82,8 +82,7 @@
 }
 
 #trendingNews {
-  margin: $sp-xl 0 $sp-xl 0;
-  padding: 0 3.2rem 0;
+  padding: $sp-xl 3.2rem;
 }
 
 @media screen and (min-width: 280px) {
@@ -110,7 +109,7 @@
     }
   }
   #main-container {
-    padding: $sp-md 3.2rem 0;
+    padding: $sp-md 3.2rem 6rem;
     .both-section {
       display: flex;
       flex-flow: row wrap-reverse;
@@ -192,7 +191,7 @@
         padding: 0;
         row-gap: 3.2rem;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
-        padding: 30px 0 60px;
+        padding-top: 30px;
 
         article {
           align-content: center;
@@ -385,7 +384,7 @@
         padding: 0;
         row-gap: 3.2rem;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
-        padding: 30px 0 60px;
+        padding-top: 30px;
         article {
           align-content: center;
           align-self: center;
@@ -464,8 +463,6 @@
   }
   #main-container {
     margin-top: $sp-lg;
-    margin-bottom: $sp-xxl;
-
     h2 {
       font-family: "Montserrat";
       font-style: normal;
@@ -478,7 +475,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       border-top: 1px solid rgba(255, 255, 255, 0.2);
-      padding: 30px 0 60px;
+      padding-top: 30px;
 
       aside {
         padding: 1rem 8rem;
