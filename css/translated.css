@@ -1673,8 +1673,8 @@ p {
   #contact h2,
   #location h2 {
     font-size: 4.8em; }
-  #contact h3,
-  #location h3 {
+  #contacth3,
+  #locationh3 {
     font-size: 3.2em; }
   .location__info h3 {
     font-size: 1.8em !important; }
